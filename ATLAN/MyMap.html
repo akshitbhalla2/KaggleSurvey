@@ -1,0 +1,2741 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_11950ff8273c4bcbaaeb5b7e6163feaa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_11950ff8273c4bcbaaeb5b7e6163feaa" ></div>
+        
+</body>
+<script>    
+    
+            var map_11950ff8273c4bcbaaeb5b7e6163feaa = L.map(
+                "map_11950ff8273c4bcbaaeb5b7e6163feaa",
+                {
+                    center: [12.9716, 77.5946],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c038463149b5481fbbb7422935ae2000 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_11950ff8273c4bcbaaeb5b7e6163feaa);
+        
+    
+            var feature_group_173f6502c4f94bbeae2ed5ce66559857 = L.featureGroup(
+                {}
+            ).addTo(map_11950ff8273c4bcbaaeb5b7e6163feaa);
+        
+    
+            var marker_cluster_6bda0cbac8ab4190a02be66434e7d109 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_173f6502c4f94bbeae2ed5ce66559857.addLayer(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var marker_d132ca13bb324a028939f94fd573985d = L.marker(
+                [13.0101633, 77.5550943],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_53dea407b6964924b176e62dd8f544af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d132ca13bb324a028939f94fd573985d.setIcon(icon_53dea407b6964924b176e62dd8f544af);
+        
+    
+        var popup_132f3dd5193d42049a27c3b89b9162df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e48ecfd92b0842408c628e9361192d62 = $(`<div id="html_e48ecfd92b0842408c628e9361192d62" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Orion Mall<br><b>Address:</b> Debenhams Cosmetic, G07, Dr. Rajkumar Road, Subramanya Nagar, West Zone, Bengaluru, Bangalore Urban, Karnataka, 560 055, India</div>`)[0];
+            popup_132f3dd5193d42049a27c3b89b9162df.setContent(html_e48ecfd92b0842408c628e9361192d62);
+        
+
+        marker_d132ca13bb324a028939f94fd573985d.bindPopup(popup_132f3dd5193d42049a27c3b89b9162df)
+        ;
+
+        
+    
+    
+            var marker_c2d4cd32624d42f097bba4402d62fbf2 = L.marker(
+                [12.99691715, 77.6963276438446],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_58c5b18387bf488cbca644d18b1f5187 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c2d4cd32624d42f097bba4402d62fbf2.setIcon(icon_58c5b18387bf488cbca644d18b1f5187);
+        
+    
+        var popup_61af802b18474309938ff0304020723c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19dfcad7b5f14b65937c4a11f7af6bee = $(`<div id="html_19dfcad7b5f14b65937c4a11f7af6bee" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Phoenix Market City Mall<br><b>Address:</b> Phoenix Market City, Devasandra, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560048, India</div>`)[0];
+            popup_61af802b18474309938ff0304020723c.setContent(html_19dfcad7b5f14b65937c4a11f7af6bee);
+        
+
+        marker_c2d4cd32624d42f097bba4402d62fbf2.bindPopup(popup_61af802b18474309938ff0304020723c)
+        ;
+
+        
+    
+    
+            var marker_9d4383d1d70f45b88de52b1a1883b883 = L.marker(
+                [12.99156925, 77.5707888650444],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_17be80a3192e4528bda6c094b58a9fde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d4383d1d70f45b88de52b1a1883b883.setIcon(icon_17be80a3192e4528bda6c094b58a9fde);
+        
+    
+        var popup_0d6ece25c7794dd8a4e13d60f089d51d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2907fcd20e5a4b05a4e9e3555a9e3788 = $(`<div id="html_2907fcd20e5a4b05a4e9e3555a9e3788" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Mantri Square Mall<br><b>Address:</b> Mantri Square, Sampige Road, Railway Colony, Subhash Nagar, West Zone, Bengaluru, Bangalore Urban, Karnataka, 560 020, India</div>`)[0];
+            popup_0d6ece25c7794dd8a4e13d60f089d51d.setContent(html_2907fcd20e5a4b05a4e9e3555a9e3788);
+        
+
+        marker_9d4383d1d70f45b88de52b1a1883b883.bindPopup(popup_0d6ece25c7794dd8a4e13d60f089d51d)
+        ;
+
+        
+    
+    
+            var marker_260999cae7e9480bae75b074c9a56cad = L.marker(
+                [12.93483165, 77.6113534452815],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_85e7d16041304665a27afc514f1f56a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_260999cae7e9480bae75b074c9a56cad.setIcon(icon_85e7d16041304665a27afc514f1f56a1);
+        
+    
+        var popup_209d95c0ac274efc8b3b59642b7f45f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2ea240e2f4248d584d3320cf00e9321 = $(`<div id="html_b2ea240e2f4248d584d3320cf00e9321" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Forum Mall<br><b>Address:</b> Forum Mall, Lakkasandra, South Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_209d95c0ac274efc8b3b59642b7f45f5.setContent(html_b2ea240e2f4248d584d3320cf00e9321);
+        
+
+        marker_260999cae7e9480bae75b074c9a56cad.bindPopup(popup_209d95c0ac274efc8b3b59642b7f45f5)
+        ;
+
+        
+    
+    
+            var marker_79ac26556a2a4455baf05a1c6f5c7c8b = L.marker(
+                [12.9700507, 77.6096701741191],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_acc3b41843fd4f8d9a63e0edee7cc20c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_79ac26556a2a4455baf05a1c6f5c7c8b.setIcon(icon_acc3b41843fd4f8d9a63e0edee7cc20c);
+        
+    
+        var popup_bcb5df50c84948d49f0b7f7af3eb01dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d28be263b1824ca6ae8e8d0be6926c5d = $(`<div id="html_d28be263b1824ca6ae8e8d0be6926c5d" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Garuda Mall<br><b>Address:</b> Garuda Mall, 7th Cross Road, Xavier Layout, Shantala Nagar, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560025, India</div>`)[0];
+            popup_bcb5df50c84948d49f0b7f7af3eb01dd.setContent(html_d28be263b1824ca6ae8e8d0be6926c5d);
+        
+
+        marker_79ac26556a2a4455baf05a1c6f5c7c8b.bindPopup(popup_bcb5df50c84948d49f0b7f7af3eb01dd)
+        ;
+
+        
+    
+    
+            var marker_710e91f3867c4890add16c2746016a58 = L.marker(
+                [13.0448939, 77.6265028437649],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_9a4028bee96a451fa88024b4ee3440a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_710e91f3867c4890add16c2746016a58.setIcon(icon_9a4028bee96a451fa88024b4ee3440a5);
+        
+    
+        var popup_cf2ae01c68c9447b964748d58353e855 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bf9d5068b824d2283e3032d6c1a2c6b = $(`<div id="html_1bf9d5068b824d2283e3032d6c1a2c6b" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Elements Mall<br><b>Address:</b> MSR Elements Mall, Thanisandra, Yelahanka Zone, Bengaluru, Bangalore Urban, Karnataka, 560077, India</div>`)[0];
+            popup_cf2ae01c68c9447b964748d58353e855.setContent(html_1bf9d5068b824d2283e3032d6c1a2c6b);
+        
+
+        marker_710e91f3867c4890add16c2746016a58.bindPopup(popup_cf2ae01c68c9447b964748d58353e855)
+        ;
+
+        
+    
+    
+            var marker_33f5d45ebe594a029237e13ea3b1acdc = L.marker(
+                [12.97208165, 77.5961424111151],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_326f7c688dda4b59abc1c760f66f7140 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_33f5d45ebe594a029237e13ea3b1acdc.setIcon(icon_326f7c688dda4b59abc1c760f66f7140);
+        
+    
+        var popup_eea3cd4022624f908b3f82743ff721d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c906ef489d244368a5375a751216cbdc = $(`<div id="html_c906ef489d244368a5375a751216cbdc" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> UB City Mall<br><b>Address:</b> 24, UB City, Shantala Nagar, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560001, India</div>`)[0];
+            popup_eea3cd4022624f908b3f82743ff721d2.setContent(html_c906ef489d244368a5375a751216cbdc);
+        
+
+        marker_33f5d45ebe594a029237e13ea3b1acdc.bindPopup(popup_eea3cd4022624f908b3f82743ff721d2)
+        ;
+
+        
+    
+    
+            var marker_ee1f583be8a14a058adfc13a15d2604f = L.marker(
+                [12.9962944, 77.6957050217993],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_78de938f73364ffc9f88fe15b4decf11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee1f583be8a14a058adfc13a15d2604f.setIcon(icon_78de938f73364ffc9f88fe15b4decf11);
+        
+    
+        var popup_2d984e4cb2ff46db8a95a9ece33fa8ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d473685deb364a08aaef28c8d4ea80c5 = $(`<div id="html_d473685deb364a08aaef28c8d4ea80c5" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> VR Bengaluru Mall<br><b>Address:</b> VR Bengaluru, Way to Parking, Phoenix Market City, Devasandra, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560048, India</div>`)[0];
+            popup_2d984e4cb2ff46db8a95a9ece33fa8ef.setContent(html_d473685deb364a08aaef28c8d4ea80c5);
+        
+
+        marker_ee1f583be8a14a058adfc13a15d2604f.bindPopup(popup_2d984e4cb2ff46db8a95a9ece33fa8ef)
+        ;
+
+        
+    
+    
+            var marker_74ce7de4bcfb452e815a7297e3e1f5b2 = L.marker(
+                [12.90748805, 77.6011431394191],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_711f3ce3a692464583dfdd539026c120 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_74ce7de4bcfb452e815a7297e3e1f5b2.setIcon(icon_711f3ce3a692464583dfdd539026c120);
+        
+    
+        var popup_77584866bfd44fa2aab6cc017e23d4b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f77a2f934994d12861fe0ad7a19837d = $(`<div id="html_0f77a2f934994d12861fe0ad7a19837d" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Vega City Mall<br><b>Address:</b> Vega City Mall, 172/1 Srinivas Industrial Estate, Bannerghatta Road, Mantri Elite, J P Nagar, Bommanahalli Zone, Bengaluru, Bangalore Urban, Karnataka, 560076, India</div>`)[0];
+            popup_77584866bfd44fa2aab6cc017e23d4b9.setContent(html_0f77a2f934994d12861fe0ad7a19837d);
+        
+
+        marker_74ce7de4bcfb452e815a7297e3e1f5b2.bindPopup(popup_77584866bfd44fa2aab6cc017e23d4b9)
+        ;
+
+        
+    
+    
+            var marker_12a0eab7a22c42bb854016763c966287 = L.marker(
+                [12.9581705, 77.5533056],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_57438a67cb84489582a51152918ca5a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_12a0eab7a22c42bb854016763c966287.setIcon(icon_57438a67cb84489582a51152918ca5a8);
+        
+    
+        var popup_f0491609713d4d6480858b251abe810f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e45b696d5f748a388d2262534d7f4a3 = $(`<div id="html_2e45b696d5f748a388d2262534d7f4a3" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Gopalan Mall<br><b>Address:</b> Gopalan Mall, Mysore Road, Jagajivanaramnagar, West Zone, Bengaluru, Bangalore Urban, Karnataka, 560026, India</div>`)[0];
+            popup_f0491609713d4d6480858b251abe810f.setContent(html_2e45b696d5f748a388d2262534d7f4a3);
+        
+
+        marker_12a0eab7a22c42bb854016763c966287.bindPopup(popup_f0491609713d4d6480858b251abe810f)
+        ;
+
+        
+    
+    
+            var marker_ee45533356c74303907af8c6332336ad = L.marker(
+                [12.9735356, 77.5517433856836],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_260d414769594c15884c0b29ae32fda7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee45533356c74303907af8c6332336ad.setIcon(icon_260d414769594c15884c0b29ae32fda7);
+        
+    
+        var popup_542a4b159df843479d8ffd4733e3ed6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c6cccc4833740708e082205ecab71f6 = $(`<div id="html_4c6cccc4833740708e082205ecab71f6" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> GT World Mall<br><b>Address:</b> GT World Mall, Magadi Road, Vijayanagar, West Zone, Bengaluru, Bangalore Urban, Karnataka, 560018, India</div>`)[0];
+            popup_542a4b159df843479d8ffd4733e3ed6f.setContent(html_4c6cccc4833740708e082205ecab71f6);
+        
+
+        marker_ee45533356c74303907af8c6332336ad.bindPopup(popup_542a4b159df843479d8ffd4733e3ed6f)
+        ;
+
+        
+    
+    
+            var marker_d7a726f1b52247df8c0d7f41150bae57 = L.marker(
+                [12.9356823, 77.5176486564562],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_cf3aa5b2043949e6bd412c00dcabc3f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7a726f1b52247df8c0d7f41150bae57.setIcon(icon_cf3aa5b2043949e6bd412c00dcabc3f4);
+        
+    
+        var popup_aac962df417f4a81b313586c048d9a60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b76c5438c5f428c8c2318f079bf5820 = $(`<div id="html_3b76c5438c5f428c8c2318f079bf5820" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Gopalan Arcade Mall<br><b>Address:</b> Gopalan Arcade Mall, Mysore Road, Nayandahalli Ward, Rajarajeshwari Nagar Zone, Bengaluru, Bangalore Urban, Karnataka, 560039, India</div>`)[0];
+            popup_aac962df417f4a81b313586c048d9a60.setContent(html_3b76c5438c5f428c8c2318f079bf5820);
+        
+
+        marker_d7a726f1b52247df8c0d7f41150bae57.bindPopup(popup_aac962df417f4a81b313586c048d9a60)
+        ;
+
+        
+    
+    
+            var marker_53fed8508f3641939f03693c5982557e = L.marker(
+                [12.965704, 77.5617444996617],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_c3b2cc1f2ab545738c1b75198b03a8c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_53fed8508f3641939f03693c5982557e.setIcon(icon_c3b2cc1f2ab545738c1b75198b03a8c1);
+        
+    
+        var popup_d9c6561eb23849b78283d53de45d0c9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d5b4c5960a545e7bfc65fb6f88702f3 = $(`<div id="html_2d5b4c5960a545e7bfc65fb6f88702f3" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> ETA Mall<br><b>Address:</b> ETA Namma Mall, Tank Bund Road, Binny Mills, Cottonpete, West Zone, Bengaluru, Bangalore Urban, Karnataka, 560018, India</div>`)[0];
+            popup_d9c6561eb23849b78283d53de45d0c9b.setContent(html_2d5b4c5960a545e7bfc65fb6f88702f3);
+        
+
+        marker_53fed8508f3641939f03693c5982557e.bindPopup(popup_d9c6561eb23849b78283d53de45d0c9b)
+        ;
+
+        
+    
+    
+            var marker_3fa5bb8d1ed34e558fbbb55e3f0df476 = L.marker(
+                [12.9792564, 77.728911679526],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_ee890c5c8bd04c07bdea1ce30f3245fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3fa5bb8d1ed34e558fbbb55e3f0df476.setIcon(icon_ee890c5c8bd04c07bdea1ce30f3245fa);
+        
+    
+        var popup_4092cca5a4304df0b5d54d53595892ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68f4786e3aa54b6d973317f2a32c0f9f = $(`<div id="html_68f4786e3aa54b6d973317f2a32c0f9f" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Inorbit Mall<br><b>Address:</b> Inorbit Mall, 8th Road, Export Promotion Industrial Park, Whitefied, Garudachara Palya, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560066, India</div>`)[0];
+            popup_4092cca5a4304df0b5d54d53595892ef.setContent(html_68f4786e3aa54b6d973317f2a32c0f9f);
+        
+
+        marker_3fa5bb8d1ed34e558fbbb55e3f0df476.bindPopup(popup_4092cca5a4304df0b5d54d53595892ef)
+        ;
+
+        
+    
+    
+            var marker_27990e04eceb4700880e7da4770e99eb = L.marker(
+                [13.0015639, 77.6326036],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_e2890de4652e49b38728572f2151cf96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_27990e04eceb4700880e7da4770e99eb.setIcon(icon_e2890de4652e49b38728572f2151cf96);
+        
+    
+        var popup_6a85c71a987d4f369905856e5dff1aa2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b307e58b536d4d298755a518e5bfa987 = $(`<div id="html_b307e58b536d4d298755a518e5bfa987" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Orion East Mall<br><b>Address:</b> Orion East Mall, Banaswadi Road, MSO Colony, Maruthi Seva Nagar, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560033, India</div>`)[0];
+            popup_6a85c71a987d4f369905856e5dff1aa2.setContent(html_b307e58b536d4d298755a518e5bfa987);
+        
+
+        marker_27990e04eceb4700880e7da4770e99eb.bindPopup(popup_6a85c71a987d4f369905856e5dff1aa2)
+        ;
+
+        
+    
+    
+            var marker_9ac93dad70dd4721b5331150324e9f27 = L.marker(
+                [12.9661198, 77.7178665001912],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_88336ed00ca84ca0ba17a00cdec7728f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ac93dad70dd4721b5331150324e9f27.setIcon(icon_88336ed00ca84ca0ba17a00cdec7728f);
+        
+    
+        var popup_623cc9fd22bd48dd9782da9ad2b4a979 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0db5003a7ef647c49a234233bb9d8249 = $(`<div id="html_0db5003a7ef647c49a234233bb9d8249" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Brookfield Mall<br><b>Address:</b> Cosmos Mall, I T P L Main Road, AECS Layout B Block, Dodda Nekkundi, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560037, India</div>`)[0];
+            popup_623cc9fd22bd48dd9782da9ad2b4a979.setContent(html_0db5003a7ef647c49a234233bb9d8249);
+        
+
+        marker_9ac93dad70dd4721b5331150324e9f27.bindPopup(popup_623cc9fd22bd48dd9782da9ad2b4a979)
+        ;
+
+        
+    
+    
+            var marker_3d575a4d907e4b33aa6943468a598251 = L.marker(
+                [13.02778845, 77.6509815906093],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_bf7ff99f911d493ab69fb16913953f45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d575a4d907e4b33aa6943468a598251.setIcon(icon_bf7ff99f911d493ab69fb16913953f45);
+        
+    
+        var popup_cfa38a19add142bea65caf00711722b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f74b02558bd24ec2a87b97bf5bb889b2 = $(`<div id="html_f74b02558bd24ec2a87b97bf5bb889b2" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Kempfort Mall<br><b>Address:</b> KempFort Apartments, Horamavu, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560043, India</div>`)[0];
+            popup_cfa38a19add142bea65caf00711722b3.setContent(html_f74b02558bd24ec2a87b97bf5bb889b2);
+        
+
+        marker_3d575a4d907e4b33aa6943468a598251.bindPopup(popup_cfa38a19add142bea65caf00711722b3)
+        ;
+
+        
+    
+    
+            var marker_bf895310bffe4b388f06b228391e10a4 = L.marker(
+                [12.99341435, 77.6640883452033],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_f9185d3ab726443a989521978eb84360 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bf895310bffe4b388f06b228391e10a4.setIcon(icon_f9185d3ab726443a989521978eb84360);
+        
+    
+        var popup_c287274fa22a4ababb0bc35f32fe6110 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76bfbf5777b44d50bfdb3e8bceb446fd = $(`<div id="html_76bfbf5777b44d50bfdb3e8bceb446fd" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Gopalan Grand Mall<br><b>Address:</b> Gopalan Grand Mall, C V Raman Nagar Ward, East Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_c287274fa22a4ababb0bc35f32fe6110.setContent(html_76bfbf5777b44d50bfdb3e8bceb446fd);
+        
+
+        marker_bf895310bffe4b388f06b228391e10a4.bindPopup(popup_c287274fa22a4ababb0bc35f32fe6110)
+        ;
+
+        
+    
+    
+            var marker_9e04111867e748bfbf5405f09dd78805 = L.marker(
+                [12.98825765, 77.5947987943101],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_a8b466b4c55749dba4fe3f355f48ab17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9e04111867e748bfbf5405f09dd78805.setIcon(icon_a8b466b4c55749dba4fe3f355f48ab17);
+        
+    
+        var popup_396d5f285c8544b38fca0046fb92d571 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de3ad12cf5d846e7a675bf8a19c1908c = $(`<div id="html_de3ad12cf5d846e7a675bf8a19c1908c" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Sigma Mall<br><b>Address:</b> Grand Sigma Mall, Cunningham Road, Chakravarty Layout, Vasanth Nagar, East Zone, Bengaluru, Bangalore Urban, Karnataka, - 560051, India</div>`)[0];
+            popup_396d5f285c8544b38fca0046fb92d571.setContent(html_de3ad12cf5d846e7a675bf8a19c1908c);
+        
+
+        marker_9e04111867e748bfbf5405f09dd78805.bindPopup(popup_396d5f285c8544b38fca0046fb92d571)
+        ;
+
+        
+    
+    
+            var marker_5c1364552a0e4956a63f459dabeee6de = L.marker(
+                [12.98287475, 77.5594506283404],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_760b83a3443f40eda64363f41d01d104 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c1364552a0e4956a63f459dabeee6de.setIcon(icon_760b83a3443f40eda64363f41d01d104);
+        
+    
+        var popup_f69c7cefdbf0474398a79e55f842994a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f493a1ca03d46bbb26033de7f9a3970 = $(`<div id="html_2f493a1ca03d46bbb26033de7f9a3970" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Golden Mall<br><b>Address:</b> Golden Heights Mall, 1st Main Road, Rajajinagara 5th Block, Sriramamandir Ward, West Zone, Bengaluru, Bangalore Urban, Karnataka, 560021, India</div>`)[0];
+            popup_f69c7cefdbf0474398a79e55f842994a.setContent(html_2f493a1ca03d46bbb26033de7f9a3970);
+        
+
+        marker_5c1364552a0e4956a63f459dabeee6de.bindPopup(popup_f69c7cefdbf0474398a79e55f842994a)
+        ;
+
+        
+    
+    
+            var marker_c8c12ec6471047f29285c5969ed221c8 = L.marker(
+                [12.957619, 77.7451686603679],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_8960a0cd6038412795a9fd638960b642 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8c12ec6471047f29285c5969ed221c8.setIcon(icon_8960a0cd6038412795a9fd638960b642);
+        
+    
+        var popup_a772885b575b4fd3a789e58ad17f764d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_091cf0d032f54f9ebba05def33ac4411 = $(`<div id="html_091cf0d032f54f9ebba05def33ac4411" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Virginia Mall<br><b>Address:</b> Virginia Mall, Hagadur, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_a772885b575b4fd3a789e58ad17f764d.setContent(html_091cf0d032f54f9ebba05def33ac4411);
+        
+
+        marker_c8c12ec6471047f29285c5969ed221c8.bindPopup(popup_a772885b575b4fd3a789e58ad17f764d)
+        ;
+
+        
+    
+    
+            var marker_5a9e1d4e22c141ba937c488ed9f8d6f2 = L.marker(
+                [13.09398245, 77.5952075090409],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_bc1d668e214e4cb9a5c83ff348761aee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5a9e1d4e22c141ba937c488ed9f8d6f2.setIcon(icon_bc1d668e214e4cb9a5c83ff348761aee);
+        
+    
+        var popup_d0976bbca20b4705bf829b05a671ce6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62cba0f0f2d04e5d86b1a1dd4a287b9d = $(`<div id="html_62cba0f0f2d04e5d86b1a1dd4a287b9d" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> RMZ Galleria Mall<br><b>Address:</b> RMZ Galleria, Yelahanka Satellite Town, Yelahanka Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_d0976bbca20b4705bf829b05a671ce6e.setContent(html_62cba0f0f2d04e5d86b1a1dd4a287b9d);
+        
+
+        marker_5a9e1d4e22c141ba937c488ed9f8d6f2.bindPopup(popup_d0976bbca20b4705bf829b05a671ce6e)
+        ;
+
+        
+    
+    
+            var marker_047732bc58534dbf89830795e564355f = L.marker(
+                [12.9928446, 77.6612169],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_7a637ee04e574e49985dc106a9f11379 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_047732bc58534dbf89830795e564355f.setIcon(icon_7a637ee04e574e49985dc106a9f11379);
+        
+    
+        var popup_5454fb28ab0845bd95af5ffa8cf4ec84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c0546c7253e4bf59b5df6698ee09e42 = $(`<div id="html_9c0546c7253e4bf59b5df6698ee09e42" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Gopalan Signature Mall<br><b>Address:</b> Benitos, Swamy Vivekananda Road (Old Madras Road), A Narayanapura, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560016, India</div>`)[0];
+            popup_5454fb28ab0845bd95af5ffa8cf4ec84.setContent(html_9c0546c7253e4bf59b5df6698ee09e42);
+        
+
+        marker_047732bc58534dbf89830795e564355f.bindPopup(popup_5454fb28ab0845bd95af5ffa8cf4ec84)
+        ;
+
+        
+    
+    
+            var marker_3a80d4b0f29544d8b86d7457bd30477e = L.marker(
+                [12.8756837, 77.5955429679944],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_f386d217340746f4aa53af85200dfbf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3a80d4b0f29544d8b86d7457bd30477e.setIcon(icon_f386d217340746f4aa53af85200dfbf6);
+        
+    
+        var popup_98b51afabdfb4a2b9a739ee1d5862d15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da7ba5cd6c624c3d85ef47d51f13819c = $(`<div id="html_da7ba5cd6c624c3d85ef47d51f13819c" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Royal Meenakshi Mall<br><b>Address:</b> Royal Meenakshi Mall, Bannerghatta Road, HSBC, Arakere, Bommanahalli Zone, Bengaluru, Bangalore Urban, Karnataka, 560076, India</div>`)[0];
+            popup_98b51afabdfb4a2b9a739ee1d5862d15.setContent(html_da7ba5cd6c624c3d85ef47d51f13819c);
+        
+
+        marker_3a80d4b0f29544d8b86d7457bd30477e.bindPopup(popup_98b51afabdfb4a2b9a739ee1d5862d15)
+        ;
+
+        
+    
+    
+            var marker_f186fc2823ff41a599d455b83ac2488a = L.marker(
+                [12.9584433, 77.6608638],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_47ec760cf4bf4831922b1342141c5f20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f186fc2823ff41a599d455b83ac2488a.setIcon(icon_47ec760cf4bf4831922b1342141c5f20);
+        
+    
+        var popup_96286c989999453c86aaa45ccfbfe47a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7899f66f313a4395987bc321e643b6a5 = $(`<div id="html_7899f66f313a4395987bc321e643b6a5" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Palace Mall<br><b>Address:</b> Food Palace, Konena Agrahara Main Road, Konena Agrahara, Konena Agrahara Ward, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560103, India</div>`)[0];
+            popup_96286c989999453c86aaa45ccfbfe47a.setContent(html_7899f66f313a4395987bc321e643b6a5);
+        
+
+        marker_f186fc2823ff41a599d455b83ac2488a.bindPopup(popup_96286c989999453c86aaa45ccfbfe47a)
+        ;
+
+        
+    
+    
+            var marker_f1920700e1bd45ecbb472464801092b1 = L.marker(
+                [13.0490746, 77.5933966025296],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_b8bb2c7ccb9d41a4bc391153d9fd06e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f1920700e1bd45ecbb472464801092b1.setIcon(icon_b8bb2c7ccb9d41a4bc391153d9fd06e8);
+        
+    
+        var popup_60330c580ce8451a8f1a50a8dd9c0f9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9803e63b466f4d4480c8c68697edaf6a = $(`<div id="html_9803e63b466f4d4480c8c68697edaf6a" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Esteem Mall<br><b>Address:</b> Esteem Mall, Bellary Road, Byatarayanapura, Yelahanka Zone, Bengaluru, Bangalore Urban, Karnataka, 560092, India</div>`)[0];
+            popup_60330c580ce8451a8f1a50a8dd9c0f9b.setContent(html_9803e63b466f4d4480c8c68697edaf6a);
+        
+
+        marker_f1920700e1bd45ecbb472464801092b1.bindPopup(popup_60330c580ce8451a8f1a50a8dd9c0f9b)
+        ;
+
+        
+    
+    
+            var marker_ee491b6784cb42d98a89474598f6bbf7 = L.marker(
+                [12.9773998, 77.5762252],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_203a56f7a1a444a5803912733821b79e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee491b6784cb42d98a89474598f6bbf7.setIcon(icon_203a56f7a1a444a5803912733821b79e);
+        
+    
+        var popup_2870e4833e52485b810ff5109a4ca3c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45701fe78bd84143b606ee2ed665316a = $(`<div id="html_45701fe78bd84143b606ee2ed665316a" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> The Grand Majestic Mall<br><b>Address:</b> Grand Majestic Mall, 12, ೩ನೇ ಅಡ್ಡ ರಸ್ತೆ, Gandhinagar, West Zone, Bengaluru, Bangalore Urban, Karnataka, 560009, India</div>`)[0];
+            popup_2870e4833e52485b810ff5109a4ca3c3.setContent(html_45701fe78bd84143b606ee2ed665316a);
+        
+
+        marker_ee491b6784cb42d98a89474598f6bbf7.bindPopup(popup_2870e4833e52485b810ff5109a4ca3c3)
+        ;
+
+        
+    
+    
+            var marker_59e810085ab04b369a1ff2e42afbb9e5 = L.marker(
+                [12.98339605, 77.7519724186828],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_624d32fda69e47dc92a737023bbf50ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_59e810085ab04b369a1ff2e42afbb9e5.setIcon(icon_624d32fda69e47dc92a737023bbf50ed);
+        
+    
+        var popup_42fd2c93730c45fcbdc5d0fb4688c6d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_122c9242f8f5463abafbe3b952514b3b = $(`<div id="html_122c9242f8f5463abafbe3b952514b3b" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Arya Hub Mall<br><b>Address:</b> Arya Hub, Kadugodi, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_42fd2c93730c45fcbdc5d0fb4688c6d0.setContent(html_122c9242f8f5463abafbe3b952514b3b);
+        
+
+        marker_59e810085ab04b369a1ff2e42afbb9e5.bindPopup(popup_42fd2c93730c45fcbdc5d0fb4688c6d0)
+        ;
+
+        
+    
+    
+            var marker_3e7d9436d4704ff5af2cdd66a6cbf0d2 = L.marker(
+                [12.9791198, 77.5912997],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_3897e303473542b3b7ffbf8c22ca627a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3e7d9436d4704ff5af2cdd66a6cbf0d2.setIcon(icon_3897e303473542b3b7ffbf8c22ca627a);
+        
+    
+        var popup_d5d0f35a163146e9a0928ebd7636c6d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4863522f433342959da7944af6303a25 = $(`<div id="html_4863522f433342959da7944af6303a25" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Westgate Mall<br><b>Address:</b> Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_d5d0f35a163146e9a0928ebd7636c6d4.setContent(html_4863522f433342959da7944af6303a25);
+        
+
+        marker_3e7d9436d4704ff5af2cdd66a6cbf0d2.bindPopup(popup_d5d0f35a163146e9a0928ebd7636c6d4)
+        ;
+
+        
+    
+    
+            var marker_8b256995eeb347c982b5b07a64f70b2e = L.marker(
+                [12.9567706, 77.7007709],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_990b0b5796094e06ba2edcfcc0118194 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b256995eeb347c982b5b07a64f70b2e.setIcon(icon_990b0b5796094e06ba2edcfcc0118194);
+        
+    
+        var popup_9044d69963c64800b360ae71824c7034 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2203a622ea2947bba20cd92f1fc31af5 = $(`<div id="html_2203a622ea2947bba20cd92f1fc31af5" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> KLM Fashion Mall<br><b>Address:</b> KLM Fashion Mall, Varthur Road, Marathahalli Bridge, Marathahalli Ward, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560037, India</div>`)[0];
+            popup_9044d69963c64800b360ae71824c7034.setContent(html_2203a622ea2947bba20cd92f1fc31af5);
+        
+
+        marker_8b256995eeb347c982b5b07a64f70b2e.bindPopup(popup_9044d69963c64800b360ae71824c7034)
+        ;
+
+        
+    
+    
+            var marker_5c8e9dab94524231a56d6226a642fb96 = L.marker(
+                [13.02463845, 77.5487168675496],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_506675e46078441a929289b24ca4b201 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c8e9dab94524231a56d6226a642fb96.setIcon(icon_506675e46078441a929289b24ca4b201);
+        
+    
+        var popup_e2b705d63dda4d37af49174610804cc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_101fbcc9ed9841e482a304dc457bccc6 = $(`<div id="html_101fbcc9ed9841e482a304dc457bccc6" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Vaishnavi Sapphire Mall<br><b>Address:</b> Vaishnavi Sapphire Centre, 9/36, Tumkur Road, Goragunte Palya, HMT Ward, Rajarajeshwari Nagar Zone, Bengaluru, Bangalore Urban, Karnataka, 560022, India</div>`)[0];
+            popup_e2b705d63dda4d37af49174610804cc6.setContent(html_101fbcc9ed9841e482a304dc457bccc6);
+        
+
+        marker_5c8e9dab94524231a56d6226a642fb96.bindPopup(popup_e2b705d63dda4d37af49174610804cc6)
+        ;
+
+        
+    
+    
+            var marker_6f312241a2d44b229fcce4f724738ab7 = L.marker(
+                [12.9167743, 77.6713891305812],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_2842d6b3c95f43f3bf4c257a26f56783 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6f312241a2d44b229fcce4f724738ab7.setIcon(icon_2842d6b3c95f43f3bf4c257a26f56783);
+        
+    
+        var popup_3a2822121d0047b98f8a71e295781d80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_316d29339f2546529e5e514b06019dd3 = $(`<div id="html_316d29339f2546529e5e514b06019dd3" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Total Mall<br><b>Address:</b> Total Mall, Sarjapura Road, Green Glen Layout, Bellanduru, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560035, India</div>`)[0];
+            popup_3a2822121d0047b98f8a71e295781d80.setContent(html_316d29339f2546529e5e514b06019dd3);
+        
+
+        marker_6f312241a2d44b229fcce4f724738ab7.bindPopup(popup_3a2822121d0047b98f8a71e295781d80)
+        ;
+
+        
+    
+    
+            var marker_e6b72f84942242578a707f107ddeb35b = L.marker(
+                [12.934546, 77.61107],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_3f5f184653fb4122b6b49e40d2d9235a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e6b72f84942242578a707f107ddeb35b.setIcon(icon_3f5f184653fb4122b6b49e40d2d9235a);
+        
+    
+        var popup_41aed34077814f48b84cb533195c7f1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a5c70d794464abc819cb536690a6d55 = $(`<div id="html_5a5c70d794464abc819cb536690a6d55" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Metro Mall<br><b>Address:</b> Metro, Prestige Acropolis, Lakkasandra, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560001, India</div>`)[0];
+            popup_41aed34077814f48b84cb533195c7f1e.setContent(html_5a5c70d794464abc819cb536690a6d55);
+        
+
+        marker_e6b72f84942242578a707f107ddeb35b.bindPopup(popup_41aed34077814f48b84cb533195c7f1e)
+        ;
+
+        
+    
+    
+            var marker_4395e22ceead4c1ca65f92e7a4798e06 = L.marker(
+                [13.1006982, 77.5963454],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_a8078406ab29412fbdd2ae77f2df70e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4395e22ceead4c1ca65f92e7a4798e06.setIcon(icon_a8078406ab29412fbdd2ae77f2df70e6);
+        
+    
+        var popup_9b7550bd56b74b7484b373b7412d3db9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_194edd2ace49441e89e209f2dd17da0c = $(`<div id="html_194edd2ace49441e89e209f2dd17da0c" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Yelahanka Central Mall<br><b>Address:</b> Yelahanka, Yelahanka Zone, Bengaluru, Bangalore Urban, Karnataka, 560 064, India</div>`)[0];
+            popup_9b7550bd56b74b7484b373b7412d3db9.setContent(html_194edd2ace49441e89e209f2dd17da0c);
+        
+
+        marker_4395e22ceead4c1ca65f92e7a4798e06.bindPopup(popup_9b7550bd56b74b7484b373b7412d3db9)
+        ;
+
+        
+    
+    
+            var marker_a2e82e5913874bb5896ebde9c5055f4b = L.marker(
+                [12.9165317, 77.5923697],
+                {}
+            ).addTo(marker_cluster_6bda0cbac8ab4190a02be66434e7d109);
+        
+    
+            var icon_aebba73d0df645728ce5aa34b71a4fa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a2e82e5913874bb5896ebde9c5055f4b.setIcon(icon_aebba73d0df645728ce5aa34b71a4fa0);
+        
+    
+        var popup_dbff69f6dff54830b8caef98e26d99af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfed07f2deca4d188dd618bca09a68ec = $(`<div id="html_dfed07f2deca4d188dd618bca09a68ec" style="width: 100.0%; height: 100.0%;"><b>Mall:</b> Bangalore Central Mall<br><b>Address:</b> Bangalore Central Mall, 25th Main Road, JP Nagar 2nd Phase, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560069, India</div>`)[0];
+            popup_dbff69f6dff54830b8caef98e26d99af.setContent(html_dfed07f2deca4d188dd618bca09a68ec);
+        
+
+        marker_a2e82e5913874bb5896ebde9c5055f4b.bindPopup(popup_dbff69f6dff54830b8caef98e26d99af)
+        ;
+
+        
+    
+    
+            var feature_group_0bdbe09c2f9c4863a617bb346ce80b55 = L.featureGroup(
+                {}
+            ).addTo(map_11950ff8273c4bcbaaeb5b7e6163feaa);
+        
+    
+            var marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_0bdbe09c2f9c4863a617bb346ce80b55.addLayer(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var marker_b8b73dc667cd43e599fe1b0301ea8d0f = L.marker(
+                [12.9977967, 77.5474478],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_ca8232acc9bd4cca9cbaa5176b277c0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b8b73dc667cd43e599fe1b0301ea8d0f.setIcon(icon_ca8232acc9bd4cca9cbaa5176b277c0c);
+        
+    
+        var popup_63f203a179364262a1869b33171163ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82bbb6a15cbd467bbdd179d7e8b74ae2 = $(`<div id="html_82bbb6a15cbd467bbdd179d7e8b74ae2" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Onesta<br><b>Address:</b> Onesta, 706, Modi Hospital Main Road, Rajajinagar 1st Block, Nagapura Ward, West Zone, Bengaluru, Bangalore Urban, Karnataka, 560086, India</div>`)[0];
+            popup_63f203a179364262a1869b33171163ee.setContent(html_82bbb6a15cbd467bbdd179d7e8b74ae2);
+        
+
+        marker_b8b73dc667cd43e599fe1b0301ea8d0f.bindPopup(popup_63f203a179364262a1869b33171163ee)
+        ;
+
+        
+    
+    
+            var marker_164379fa9fa24a8b9a2384621535cc25 = L.marker(
+                [12.9251897, 77.6743698],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_4b47eea9fb8d41c7ac53c23781776245 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_164379fa9fa24a8b9a2384621535cc25.setIcon(icon_4b47eea9fb8d41c7ac53c23781776245);
+        
+    
+        var popup_9c97bf958b23451fbf927d436af9903b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5e9be8463da41949e8b247f42e83e54 = $(`<div id="html_a5e9be8463da41949e8b247f42e83e54" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Empire Restaurant<br><b>Address:</b> Empire restaurant, Outer Ring Road, Green Glen Layout, Bellanduru, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 5600037, India</div>`)[0];
+            popup_9c97bf958b23451fbf927d436af9903b.setContent(html_a5e9be8463da41949e8b247f42e83e54);
+        
+
+        marker_164379fa9fa24a8b9a2384621535cc25.bindPopup(popup_9c97bf958b23451fbf927d436af9903b)
+        ;
+
+        
+    
+    
+            var marker_f2f0d624b8bd4d96b51659e93c73f16f = L.marker(
+                [12.9496216, 77.6997317],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_8f675b6861ef44c9a99b21793345da26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f2f0d624b8bd4d96b51659e93c73f16f.setIcon(icon_8f675b6861ef44c9a99b21793345da26);
+        
+    
+        var popup_7d39a4b894c540699b65a8c69edb2065 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8b88b67c3f44ec5aa8975ead18fde19 = $(`<div id="html_f8b88b67c3f44ec5aa8975ead18fde19" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Meghana Foods<br><b>Address:</b> Meghana Foods, Sevice Road, P R Layout, Bellanduru, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560037, India</div>`)[0];
+            popup_7d39a4b894c540699b65a8c69edb2065.setContent(html_f8b88b67c3f44ec5aa8975ead18fde19);
+        
+
+        marker_f2f0d624b8bd4d96b51659e93c73f16f.bindPopup(popup_7d39a4b894c540699b65a8c69edb2065)
+        ;
+
+        
+    
+    
+            var marker_2b086c28a475407b9cad319a6a4bef60 = L.marker(
+                [13.0021237, 77.6615626],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_8d31739312804aa7824222169d24bb3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2b086c28a475407b9cad319a6a4bef60.setIcon(icon_8d31739312804aa7824222169d24bb3e);
+        
+    
+        var popup_df911f236dcb4599b64d408075c1d062 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_592d2742c1ce47e697b6dbc908d6ccfe = $(`<div id="html_592d2742c1ce47e697b6dbc908d6ccfe" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Corner House Ice Cream<br><b>Address:</b> Corner House Ice Cream, 201, 2nd Main Road, East of NGEF Layout, Kasturi Nagar, 1st C Cross Road, Benniganahalli, Benniganahalli Ward, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560043, India</div>`)[0];
+            popup_df911f236dcb4599b64d408075c1d062.setContent(html_592d2742c1ce47e697b6dbc908d6ccfe);
+        
+
+        marker_2b086c28a475407b9cad319a6a4bef60.bindPopup(popup_df911f236dcb4599b64d408075c1d062)
+        ;
+
+        
+    
+    
+            var marker_821b8459c7f240dda10f0c1ba55c548a = L.marker(
+                [12.9240662, 77.5642334],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_df7f7744e7c74775b7b8d9b9558ec52f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_821b8459c7f240dda10f0c1ba55c548a.setIcon(icon_df7f7744e7c74775b7b8d9b9558ec52f);
+        
+    
+        var popup_c3ef9220ec024c3293cf4cec6e259d2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e13e8a167b3c49c48f7856d9992f957f = $(`<div id="html_e13e8a167b3c49c48f7856d9992f957f" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Smacznego<br><b>Address:</b> Smacznego, 2470, 25th Cross Road, Ganesh Mandir ward, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560070, India</div>`)[0];
+            popup_c3ef9220ec024c3293cf4cec6e259d2c.setContent(html_e13e8a167b3c49c48f7856d9992f957f);
+        
+
+        marker_821b8459c7f240dda10f0c1ba55c548a.bindPopup(popup_c3ef9220ec024c3293cf4cec6e259d2c)
+        ;
+
+        
+    
+    
+            var marker_11bc9bbd5a70405ca18ffbb0c2361200 = L.marker(
+                [13.0222694, 77.6397678],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_d48eb001957340bd8dcbd5015c527dba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_11bc9bbd5a70405ca18ffbb0c2361200.setIcon(icon_d48eb001957340bd8dcbd5015c527dba);
+        
+    
+        var popup_cd3d3730879549f58262a2787964a4a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_219e3481782b42dba4319bd903f09d68 = $(`<div id="html_219e3481782b42dba4319bd903f09d68" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Faasos<br><b>Address:</b> Faasos, 406, 5th Main Road, Kacharkanahalli, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560043, India</div>`)[0];
+            popup_cd3d3730879549f58262a2787964a4a5.setContent(html_219e3481782b42dba4319bd903f09d68);
+        
+
+        marker_11bc9bbd5a70405ca18ffbb0c2361200.bindPopup(popup_cd3d3730879549f58262a2787964a4a5)
+        ;
+
+        
+    
+    
+            var marker_528c23c6ed0c4da5b1a90a694a3c8ae0 = L.marker(
+                [12.9400875, 77.5642026],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_70735a0e42a24e06beff9bf7f22c0fe8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_528c23c6ed0c4da5b1a90a694a3c8ae0.setIcon(icon_70735a0e42a24e06beff9bf7f22c0fe8);
+        
+    
+        var popup_86edb6bf5b2d409d939ab486d29b12d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b81ec06694654b31aff7ed0d6a8315af = $(`<div id="html_b81ec06694654b31aff7ed0d6a8315af" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Szechuan Dragon<br><b>Address:</b> Szechuan Dragon Chinese Restaurant, 8, 3rd Main Road, Sunkenahalli Ward, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560004, India</div>`)[0];
+            popup_86edb6bf5b2d409d939ab486d29b12d2.setContent(html_b81ec06694654b31aff7ed0d6a8315af);
+        
+
+        marker_528c23c6ed0c4da5b1a90a694a3c8ae0.bindPopup(popup_86edb6bf5b2d409d939ab486d29b12d2)
+        ;
+
+        
+    
+    
+            var marker_4ff0f1f26e2f48c7b7ed13430e313022 = L.marker(
+                [12.9728288, 77.607387],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_24d04ea4021449de807abeec7fd29a3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4ff0f1f26e2f48c7b7ed13430e313022.setIcon(icon_24d04ea4021449de807abeec7fd29a3c);
+        
+    
+        var popup_97d7d7a3551f4214b56eb04c02c98cd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c451870c2db34306846a1995de8181af = $(`<div id="html_c451870c2db34306846a1995de8181af" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Frozen Bottle<br><b>Address:</b> Frozen Bottle, Brigade Road, Shantala Nagar, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560025, India</div>`)[0];
+            popup_97d7d7a3551f4214b56eb04c02c98cd1.setContent(html_c451870c2db34306846a1995de8181af);
+        
+
+        marker_4ff0f1f26e2f48c7b7ed13430e313022.bindPopup(popup_97d7d7a3551f4214b56eb04c02c98cd1)
+        ;
+
+        
+    
+    
+            var marker_f82019eb38b847a3a91555fb96a29ed8 = L.marker(
+                [12.947549, 77.5739319],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_ea06cb1597b045cbbdec44e08a70d2ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f82019eb38b847a3a91555fb96a29ed8.setIcon(icon_ea06cb1597b045cbbdec44e08a70d2ca);
+        
+    
+        var popup_57fed2e4c18e4ed08392eb71781cb90b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8316607e31f3498f9e1e3780d79eafb5 = $(`<div id="html_8316607e31f3498f9e1e3780d79eafb5" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Cool Corner<br><b>Address:</b> Cool corner, Krishna Rajendra Road, Mavalli, Vishveshwara Puram, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560004, India</div>`)[0];
+            popup_57fed2e4c18e4ed08392eb71781cb90b.setContent(html_8316607e31f3498f9e1e3780d79eafb5);
+        
+
+        marker_f82019eb38b847a3a91555fb96a29ed8.bindPopup(popup_57fed2e4c18e4ed08392eb71781cb90b)
+        ;
+
+        
+    
+    
+            var marker_7f348b4158304a1cad14f3b4682a6bcc = L.marker(
+                [12.9263463, 77.5647627],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_eeaae5ee0e15470b9532b25793ebfc4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7f348b4158304a1cad14f3b4682a6bcc.setIcon(icon_eeaae5ee0e15470b9532b25793ebfc4f);
+        
+    
+        var popup_c8264d77ad9d49f887e69e6f2f40003b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f62ba8214d7a4471af4e26ab16e33551 = $(`<div id="html_f62ba8214d7a4471af4e26ab16e33551" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Jalsa<br><b>Address:</b> Jalsa, 24th Cross Road, Ganesh Mandir ward, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560070, India</div>`)[0];
+            popup_c8264d77ad9d49f887e69e6f2f40003b.setContent(html_f62ba8214d7a4471af4e26ab16e33551);
+        
+
+        marker_7f348b4158304a1cad14f3b4682a6bcc.bindPopup(popup_c8264d77ad9d49f887e69e6f2f40003b)
+        ;
+
+        
+    
+    
+            var marker_8181bbcb1dcb42939d36ad756ccf0f26 = L.marker(
+                [12.8994481, 77.5859306],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_2e00789ca0b9444db106fc484b8ed0af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8181bbcb1dcb42939d36ad756ccf0f26.setIcon(icon_2e00789ca0b9444db106fc484b8ed0af);
+        
+    
+        var popup_f624df5c240244c08baf7d96aa8a1f3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99e1d9e296ff48f382228d527db2eebc = $(`<div id="html_99e1d9e296ff48f382228d527db2eebc" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Roll Over<br><b>Address:</b> Roll Over, 24th Main Road, Sarakki, Bommanahalli Zone, Bengaluru, Bangalore Urban, Karnataka, 560 078, India</div>`)[0];
+            popup_f624df5c240244c08baf7d96aa8a1f3a.setContent(html_99e1d9e296ff48f382228d527db2eebc);
+        
+
+        marker_8181bbcb1dcb42939d36ad756ccf0f26.bindPopup(popup_f624df5c240244c08baf7d96aa8a1f3a)
+        ;
+
+        
+    
+    
+            var marker_97d9d2de3df94219a15f06c2b2fdc6f1 = L.marker(
+                [12.9572347, 77.7331316],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_0c0fa80c19cf46e8a828663f29d6c890 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_97d9d2de3df94219a15f06c2b2fdc6f1.setIcon(icon_0c0fa80c19cf46e8a828663f29d6c890);
+        
+    
+        var popup_8b3d495de5894c66b2456bf259111425 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2467834872c64573bbfee4ac12a43f1d = $(`<div id="html_2467834872c64573bbfee4ac12a43f1d" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Patio 805<br><b>Address:</b> Cafe Bel Cibo @ Patio, Varthur Road, Hagadur, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 5600, India</div>`)[0];
+            popup_8b3d495de5894c66b2456bf259111425.setContent(html_2467834872c64573bbfee4ac12a43f1d);
+        
+
+        marker_97d9d2de3df94219a15f06c2b2fdc6f1.bindPopup(popup_8b3d495de5894c66b2456bf259111425)
+        ;
+
+        
+    
+    
+            var marker_1446e48c28764c808786d71011d7ed04 = L.marker(
+                [12.9508763, 77.5777949],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_682a766f726344cba14c502a349cb69f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1446e48c28764c808786d71011d7ed04.setIcon(icon_682a766f726344cba14c502a349cb69f);
+        
+    
+        var popup_3605fa682a414d5695db213fc7035003 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ebfde01efbc4ef6a081d3bdcf7564a5 = $(`<div id="html_5ebfde01efbc4ef6a081d3bdcf7564a5" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Dev Sagar - Food Street<br><b>Address:</b> Dev Sagar, Old Market Street, Mavalli, Vishveshwara Puram, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560 002, India</div>`)[0];
+            popup_3605fa682a414d5695db213fc7035003.setContent(html_5ebfde01efbc4ef6a081d3bdcf7564a5);
+        
+
+        marker_1446e48c28764c808786d71011d7ed04.bindPopup(popup_3605fa682a414d5695db213fc7035003)
+        ;
+
+        
+    
+    
+            var marker_917058c002f044fab7f33071c4befa56 = L.marker(
+                [12.9663337, 77.6416686],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_4a62d303212040d29e6fe989314205c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_917058c002f044fab7f33071c4befa56.setIcon(icon_4a62d303212040d29e6fe989314205c8);
+        
+    
+        var popup_59be217952c34e22a2f738e86b3ec107 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81066d061962487994854c56f3a56ec6 = $(`<div id="html_81066d061962487994854c56f3a56ec6" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> @Italy<br><b>Address:</b> Little Italy, 100 Feet Road(S K Karim Khan Road), Babasaheb Colony, Jeevanbhima Nagar, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560008, India</div>`)[0];
+            popup_59be217952c34e22a2f738e86b3ec107.setContent(html_81066d061962487994854c56f3a56ec6);
+        
+
+        marker_917058c002f044fab7f33071c4befa56.bindPopup(popup_59be217952c34e22a2f738e86b3ec107)
+        ;
+
+        
+    
+    
+            var marker_3a72bd7dfcec4739bb89911cc0658dc9 = L.marker(
+                [12.9266174, 77.5646489],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_fd02f02579e04d1fb453cc9a57c02e4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3a72bd7dfcec4739bb89911cc0658dc9.setIcon(icon_fd02f02579e04d1fb453cc9a57c02e4f);
+        
+    
+        var popup_18127fcdd7fe454f8d5c74157b354c18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fef132807e1246bd88b3bff16044788e = $(`<div id="html_fef132807e1246bd88b3bff16044788e" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Roving Feast<br><b>Address:</b> Roving Feast, 78, 21st Cross Road, Ganesh Mandir ward, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560070, India</div>`)[0];
+            popup_18127fcdd7fe454f8d5c74157b354c18.setContent(html_fef132807e1246bd88b3bff16044788e);
+        
+
+        marker_3a72bd7dfcec4739bb89911cc0658dc9.bindPopup(popup_18127fcdd7fe454f8d5c74157b354c18)
+        ;
+
+        
+    
+    
+            var marker_a774bc6617844beb917398362616ca6e = L.marker(
+                [12.9791198, 77.5912997],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_3f74bb6134864ae8a882450254440d0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a774bc6617844beb917398362616ca6e.setIcon(icon_3f74bb6134864ae8a882450254440d0f);
+        
+    
+        var popup_48e633d8ac2645a69e2d4a0b29227548 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bea430543d464af98adaff0963503f54 = $(`<div id="html_bea430543d464af98adaff0963503f54" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> 1947<br><b>Address:</b> Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_48e633d8ac2645a69e2d4a0b29227548.setContent(html_bea430543d464af98adaff0963503f54);
+        
+
+        marker_a774bc6617844beb917398362616ca6e.bindPopup(popup_48e633d8ac2645a69e2d4a0b29227548)
+        ;
+
+        
+    
+    
+            var marker_69335dd8f04d43c9bf956f5ec35c7aa9 = L.marker(
+                [12.9261046, 77.5502503],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_47b9cc42174a41eaad9796aa7e981121 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_69335dd8f04d43c9bf956f5ec35c7aa9.setIcon(icon_47b9cc42174a41eaad9796aa7e981121);
+        
+    
+        var popup_f44b639659d6452393117343a7953fcc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_abd910765d5c45f78bc14c124a62c090 = $(`<div id="html_abd910765d5c45f78bc14c124a62c090" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Anna Kuteera<br><b>Address:</b> Anna Kuteera, 1st Cross Road, Katriguppe, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560085, India</div>`)[0];
+            popup_f44b639659d6452393117343a7953fcc.setContent(html_abd910765d5c45f78bc14c124a62c090);
+        
+
+        marker_69335dd8f04d43c9bf956f5ec35c7aa9.bindPopup(popup_f44b639659d6452393117343a7953fcc)
+        ;
+
+        
+    
+    
+            var marker_6d8a08d514064853a9ae9cb56f23f48d = L.marker(
+                [13.0666217, 77.5961004],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_39693bedced445198e5fd0a1811483da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6d8a08d514064853a9ae9cb56f23f48d.setIcon(icon_39693bedced445198e5fd0a1811483da);
+        
+    
+        var popup_265a8d48423e4687aa20287e0420d45e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65e3fd339b66491096e7ca700e4bac0b = $(`<div id="html_65e3fd339b66491096e7ca700e4bac0b" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Kanti Sweets<br><b>Address:</b> Kanti Sweets, Amrutahalli Main Road, Byatarayanapura, Yelahanka Zone, Bengaluru, Bangalore Urban, Karnataka, 560065, India</div>`)[0];
+            popup_265a8d48423e4687aa20287e0420d45e.setContent(html_65e3fd339b66491096e7ca700e4bac0b);
+        
+
+        marker_6d8a08d514064853a9ae9cb56f23f48d.bindPopup(popup_265a8d48423e4687aa20287e0420d45e)
+        ;
+
+        
+    
+    
+            var marker_6de39524c3d54cfd8353573791bf22c7 = L.marker(
+                [12.9377041, 77.5492421],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_e573c1fbf737429bbb32ff5230c8c0a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6de39524c3d54cfd8353573791bf22c7.setIcon(icon_e573c1fbf737429bbb32ff5230c8c0a5);
+        
+    
+        var popup_fed5bfcddd3f432eb850ccad6a72a4e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7804e1a01ca44641aa968acf6cf896e8 = $(`<div id="html_7804e1a01ca44641aa968acf6cf896e8" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Havyaka Mess<br><b>Address:</b> Havyaka Mess, 80 Feet Road, Girinagara, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560085, India</div>`)[0];
+            popup_fed5bfcddd3f432eb850ccad6a72a4e6.setContent(html_7804e1a01ca44641aa968acf6cf896e8);
+        
+
+        marker_6de39524c3d54cfd8353573791bf22c7.bindPopup(popup_fed5bfcddd3f432eb850ccad6a72a4e6)
+        ;
+
+        
+    
+    
+            var marker_24e30c5930b94023b12e35ea240bddb4 = L.marker(
+                [13.0334463, 77.5311642],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_772d1136ce9f4832a440287d58ad83cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_24e30c5930b94023b12e35ea240bddb4.setIcon(icon_772d1136ce9f4832a440287d58ad83cb);
+        
+    
+        var popup_cea1e1f516884849b4bb653ebc335e27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1ade6fe6044494f84e4154d6212dbb9 = $(`<div id="html_a1ade6fe6044494f84e4154d6212dbb9" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> McDonald's<br><b>Address:</b> McDonald's, Tumkur Road, Peenya Industrial Area, HMT Ward, Rajarajeshwari Nagar Zone, Bengaluru, Bangalore Urban, Karnataka, 560058, India</div>`)[0];
+            popup_cea1e1f516884849b4bb653ebc335e27.setContent(html_a1ade6fe6044494f84e4154d6212dbb9);
+        
+
+        marker_24e30c5930b94023b12e35ea240bddb4.bindPopup(popup_cea1e1f516884849b4bb653ebc335e27)
+        ;
+
+        
+    
+    
+            var marker_e400ec56ea694e18b185c2dace240a2b = L.marker(
+                [12.9831416, 77.5593081],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_4c0f25faa13346dc8ff4553bd3cecec0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e400ec56ea694e18b185c2dace240a2b.setIcon(icon_4c0f25faa13346dc8ff4553bd3cecec0);
+        
+    
+        var popup_db878d96b8724e83aad328794d5c8cde = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a43fd96aeef4d2d860ca7461624828f = $(`<div id="html_5a43fd96aeef4d2d860ca7461624828f" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Domino's Pizza<br><b>Address:</b> Dominos Pizza, Vatal Nagaraj Road, Rajajinagara 5th Block, Sriramamandir Ward, West Zone, Bengaluru, Bangalore Urban, Karnataka, 560010, India</div>`)[0];
+            popup_db878d96b8724e83aad328794d5c8cde.setContent(html_5a43fd96aeef4d2d860ca7461624828f);
+        
+
+        marker_e400ec56ea694e18b185c2dace240a2b.bindPopup(popup_db878d96b8724e83aad328794d5c8cde)
+        ;
+
+        
+    
+    
+            var marker_05a30913e7514ae3ae73fb68fab88a4e = L.marker(
+                [12.9690401, 77.6480024],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_c8cb4fc315634a4eb60c07653fcb1558 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_05a30913e7514ae3ae73fb68fab88a4e.setIcon(icon_c8cb4fc315634a4eb60c07653fcb1558);
+        
+    
+        var popup_e086ab6dc36a41e3b5d8f1d359ce5ec6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be3e8257dc444f56b25cf66f19cf71c8 = $(`<div id="html_be3e8257dc444f56b25cf66f19cf71c8" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Lassi Shop<br><b>Address:</b> Lassi Shop, Jeevan Bhima Nagar 10th Main Road, Jeevanbhima Nagar, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560075, India</div>`)[0];
+            popup_e086ab6dc36a41e3b5d8f1d359ce5ec6.setContent(html_be3e8257dc444f56b25cf66f19cf71c8);
+        
+
+        marker_05a30913e7514ae3ae73fb68fab88a4e.bindPopup(popup_e086ab6dc36a41e3b5d8f1d359ce5ec6)
+        ;
+
+        
+    
+    
+            var marker_2a7aacd5f5094bb4abdda772d3ab5df0 = L.marker(
+                [13.05404065, 77.5074734685172],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_1d08422b0bf047778911208d974819d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2a7aacd5f5094bb4abdda772d3ab5df0.setIcon(icon_1d08422b0bf047778911208d974819d3);
+        
+    
+        var popup_15237c448c4044daa8f489eec5096c68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5aace8f9a7ec4cb88b8d35d68bfd2411 = $(`<div id="html_5aace8f9a7ec4cb88b8d35d68bfd2411" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Donne Biriyani House<br><b>Address:</b> donne biriyani, Hesaraghatta Main Road, Kirloskar Layout, Bagalakunte, Dasarahalli Zone, Bengaluru, Bangalore Urban, Karnataka, 560073, India</div>`)[0];
+            popup_15237c448c4044daa8f489eec5096c68.setContent(html_5aace8f9a7ec4cb88b8d35d68bfd2411);
+        
+
+        marker_2a7aacd5f5094bb4abdda772d3ab5df0.bindPopup(popup_15237c448c4044daa8f489eec5096c68)
+        ;
+
+        
+    
+    
+            var marker_ef53374e6a964c5396ca7e917c87d788 = L.marker(
+                [12.9353554, 77.6075043],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_1d3c30faac1b44158b0f61b4db6d8bac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ef53374e6a964c5396ca7e917c87d788.setIcon(icon_1d3c30faac1b44158b0f61b4db6d8bac);
+        
+    
+        var popup_fb3ea3aca81e4a6e99982ef8d387075b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd3bcf6d6f2743a1ac2e49497d82f21e = $(`<div id="html_fd3bcf6d6f2743a1ac2e49497d82f21e" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Just Shawarma<br><b>Address:</b> Just Shawarma, Christ School Road, Sadgunte Palya, Suddagunte Palya Ward, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560029, India</div>`)[0];
+            popup_fb3ea3aca81e4a6e99982ef8d387075b.setContent(html_fd3bcf6d6f2743a1ac2e49497d82f21e);
+        
+
+        marker_ef53374e6a964c5396ca7e917c87d788.bindPopup(popup_fb3ea3aca81e4a6e99982ef8d387075b)
+        ;
+
+        
+    
+    
+            var marker_cec45d5c07bb47fabfcee9f0f2fd782d = L.marker(
+                [12.9698125, 77.5366838],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_c989e6134b01478380b0802520cd8fab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cec45d5c07bb47fabfcee9f0f2fd782d.setIcon(icon_c989e6134b01478380b0802520cd8fab);
+        
+    
+        var popup_dd933828c77e425f837ff7436cae55e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ae5903cc181416c996b459fca0d69a1 = $(`<div id="html_6ae5903cc181416c996b459fca0d69a1" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Udupi Ruchi<br><b>Address:</b> Café udupi ruchi, 17, Chord Road, Marenahalli, Marenahalli Ward, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560040, India</div>`)[0];
+            popup_dd933828c77e425f837ff7436cae55e4.setContent(html_6ae5903cc181416c996b459fca0d69a1);
+        
+
+        marker_cec45d5c07bb47fabfcee9f0f2fd782d.bindPopup(popup_dd933828c77e425f837ff7436cae55e4)
+        ;
+
+        
+    
+    
+            var marker_dc0b314aabc84017954d88d8f971173d = L.marker(
+                [12.9444107, 77.5721169],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_2844171277ef41b1bd346e68bad78e4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dc0b314aabc84017954d88d8f971173d.setIcon(icon_2844171277ef41b1bd346e68bad78e4f);
+        
+    
+        var popup_038e86c9c8374728ba99cc98b76307b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7e812af08824186ae0dd62f14e1fc55 = $(`<div id="html_d7e812af08824186ae0dd62f14e1fc55" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Grand Village<br><b>Address:</b> Grand Village, Conservancy Lane, Sunkenahalli Ward, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560004, India</div>`)[0];
+            popup_038e86c9c8374728ba99cc98b76307b9.setContent(html_d7e812af08824186ae0dd62f14e1fc55);
+        
+
+        marker_dc0b314aabc84017954d88d8f971173d.bindPopup(popup_038e86c9c8374728ba99cc98b76307b9)
+        ;
+
+        
+    
+    
+            var marker_34086bcbfc6e45498b2356814874a6e0 = L.marker(
+                [12.9453667, 77.5709983],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_ab244bc6590940af84c54d4b8e69265e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_34086bcbfc6e45498b2356814874a6e0.setIcon(icon_ab244bc6590940af84c54d4b8e69265e);
+        
+    
+        var popup_e3982809e56244a6a1ec7a214db2c180 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1df7773b9c94440884d5131b54e89a3a = $(`<div id="html_1df7773b9c94440884d5131b54e89a3a" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Timepass Dinner<br><b>Address:</b> Timepass Dinner, Gandhi Bazaar Main Road, Sunkenahalli Ward, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560004, India</div>`)[0];
+            popup_e3982809e56244a6a1ec7a214db2c180.setContent(html_1df7773b9c94440884d5131b54e89a3a);
+        
+
+        marker_34086bcbfc6e45498b2356814874a6e0.bindPopup(popup_e3982809e56244a6a1ec7a214db2c180)
+        ;
+
+        
+    
+    
+            var marker_522e3c2019404f2bbeeb1c563e983e67 = L.marker(
+                [12.97898315, 77.6437967050071],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_ca2ec0ad82ef42d3bbb2f65dc4dbafaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_522e3c2019404f2bbeeb1c563e983e67.setIcon(icon_ca2ec0ad82ef42d3bbb2f65dc4dbafaf);
+        
+    
+        var popup_a36ca078b7a74e56be8a5f97d9b00fad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9736f13d189f4d879e559ef294ed2a2e = $(`<div id="html_9736f13d189f4d879e559ef294ed2a2e" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Srinathji's Cafe<br><b>Address:</b> Srinathji's, Sri Krishna Temple Road, Old Binnamangala, Hoysala Nagara, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560038, India</div>`)[0];
+            popup_a36ca078b7a74e56be8a5f97d9b00fad.setContent(html_9736f13d189f4d879e559ef294ed2a2e);
+        
+
+        marker_522e3c2019404f2bbeeb1c563e983e67.bindPopup(popup_a36ca078b7a74e56be8a5f97d9b00fad)
+        ;
+
+        
+    
+    
+            var marker_cc9c92982ce2465cbfd464f424d34d78 = L.marker(
+                [12.8994281, 77.5858873],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_d38aa491b623446183fd0c918d0d101e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cc9c92982ce2465cbfd464f424d34d78.setIcon(icon_d38aa491b623446183fd0c918d0d101e);
+        
+    
+        var popup_aa19e9f489b54eb1b446add6ccc8efb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d4170c8fb784f56ab478892c5337c06 = $(`<div id="html_7d4170c8fb784f56ab478892c5337c06" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Chaatimes<br><b>Address:</b> Chaatimes, 24th Main Road, Sarakki, Bommanahalli Zone, Bengaluru, Bangalore Urban, Karnataka, 560 078, India</div>`)[0];
+            popup_aa19e9f489b54eb1b446add6ccc8efb1.setContent(html_7d4170c8fb784f56ab478892c5337c06);
+        
+
+        marker_cc9c92982ce2465cbfd464f424d34d78.bindPopup(popup_aa19e9f489b54eb1b446add6ccc8efb1)
+        ;
+
+        
+    
+    
+            var marker_f5bd9f44f45a43fea2a5a68121f4ca92 = L.marker(
+                [12.9416198, 77.5573584],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_5f5f31306ed744338398ae57c7f68098 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f5bd9f44f45a43fea2a5a68121f4ca92.setIcon(icon_5f5f31306ed744338398ae57c7f68098);
+        
+    
+        var popup_c90da8650c3d4787a5af88196301b651 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50c45e2ccee145ed87ea219ca1821bea = $(`<div id="html_50c45e2ccee145ed87ea219ca1821bea" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Banashankari Donne Biriyani<br><b>Address:</b> New Sri Banashankari Donne Biriyani Corner, 544/14, Hanumantha Nagar Main Road / 50 Feet Road, Gavipuram, Hanumanth Nagar Ward, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560050, India</div>`)[0];
+            popup_c90da8650c3d4787a5af88196301b651.setContent(html_50c45e2ccee145ed87ea219ca1821bea);
+        
+
+        marker_f5bd9f44f45a43fea2a5a68121f4ca92.bindPopup(popup_c90da8650c3d4787a5af88196301b651)
+        ;
+
+        
+    
+    
+            var marker_3b864663c0224c19931551e47f1c83ee = L.marker(
+                [12.9437988, 77.5665812],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_9a1b1631b3274787897a562ed99a020a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3b864663c0224c19931551e47f1c83ee.setIcon(icon_9a1b1631b3274787897a562ed99a020a);
+        
+    
+        var popup_122ceaef359e42df953ed6b4dd8745fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a50791cf3d04ae1a87453c1796dad86 = $(`<div id="html_1a50791cf3d04ae1a87453c1796dad86" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Chinese Kitchen<br><b>Address:</b> Chinese Kitchen, Mount Joy Road, Sunkenahalli Ward, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560019, India</div>`)[0];
+            popup_122ceaef359e42df953ed6b4dd8745fe.setContent(html_1a50791cf3d04ae1a87453c1796dad86);
+        
+
+        marker_3b864663c0224c19931551e47f1c83ee.bindPopup(popup_122ceaef359e42df953ed6b4dd8745fe)
+        ;
+
+        
+    
+    
+            var marker_1c99d20409184f9089af2513aed2f250 = L.marker(
+                [12.8845235, 77.5667067],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_f69a8d15ff80420f9ac223e272cae457 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1c99d20409184f9089af2513aed2f250.setIcon(icon_f69a8d15ff80420f9ac223e272cae457);
+        
+    
+        var popup_8cdd983a15d349c1943c9c894ba895af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3063bc82f7d244eab6244c6e0a18c974 = $(`<div id="html_3063bc82f7d244eab6244c6e0a18c974" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Kaggis<br><b>Address:</b> Kaggi's, Amruth Nagar Main Road, Vasanthapura, Bommanahalli Zone, Bengaluru, Bangalore Urban, Karnataka, 560083, India</div>`)[0];
+            popup_8cdd983a15d349c1943c9c894ba895af.setContent(html_3063bc82f7d244eab6244c6e0a18c974);
+        
+
+        marker_1c99d20409184f9089af2513aed2f250.bindPopup(popup_8cdd983a15d349c1943c9c894ba895af)
+        ;
+
+        
+    
+    
+            var marker_3d632c920d05406b81ba253c9c459e7a = L.marker(
+                [12.9089347, 77.5626077],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_ebe33db849fe4d938b4638b528339b8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3d632c920d05406b81ba253c9c459e7a.setIcon(icon_ebe33db849fe4d938b4638b528339b8b);
+        
+    
+        var popup_f3c869187f274d9bab8b3136866070c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c0ee76f61724aa6853eb8735ea03cdc = $(`<div id="html_1c0ee76f61724aa6853eb8735ea03cdc" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Polar Bear<br><b>Address:</b> Polar Bear, 4th Main JHBC Road, Kumaraswamy Layout, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560082, India</div>`)[0];
+            popup_f3c869187f274d9bab8b3136866070c8.setContent(html_1c0ee76f61724aa6853eb8735ea03cdc);
+        
+
+        marker_3d632c920d05406b81ba253c9c459e7a.bindPopup(popup_f3c869187f274d9bab8b3136866070c8)
+        ;
+
+        
+    
+    
+            var marker_8269f9c9f70c4f299b7702c314e645cd = L.marker(
+                [12.9251991, 77.63373415],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_875dc18515e542bcb7b403b9299b41f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8269f9c9f70c4f299b7702c314e645cd.setIcon(icon_875dc18515e542bcb7b403b9299b41f8);
+        
+    
+        var popup_f111a6523189400da5cb618e83d8722f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f40adae381a4015ab876b1a6d9471d2 = $(`<div id="html_4f40adae381a4015ab876b1a6d9471d2" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Udupi Upahar<br><b>Address:</b> Udupi Upahar, 80 Feet Road, ST Bed Layout, Ejipura, South Zone, Bengaluru, Bangalore Urban, Karnataka, 5560034, India</div>`)[0];
+            popup_f111a6523189400da5cb618e83d8722f.setContent(html_4f40adae381a4015ab876b1a6d9471d2);
+        
+
+        marker_8269f9c9f70c4f299b7702c314e645cd.bindPopup(popup_f111a6523189400da5cb618e83d8722f)
+        ;
+
+        
+    
+    
+            var marker_eab27f53ccb14f9e903251bf17db4275 = L.marker(
+                [12.9259462, 77.6752588],
+                {}
+            ).addTo(marker_cluster_8cc7aef7c5b1422cbd2de528e5c17284);
+        
+    
+            var icon_0d6fcfa7b54a4103b56ef79e909f6d9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eab27f53ccb14f9e903251bf17db4275.setIcon(icon_0d6fcfa7b54a4103b56ef79e909f6d9b);
+        
+    
+        var popup_4831c5a203b847a896164e97bc533da4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_529a1cdc026844ed9c730c278fd66b76 = $(`<div id="html_529a1cdc026844ed9c730c278fd66b76" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> KFC<br><b>Address:</b> KFC, Outer Ring Road, Green Glen Layout, Bellanduru, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 5600037, India</div>`)[0];
+            popup_4831c5a203b847a896164e97bc533da4.setContent(html_529a1cdc026844ed9c730c278fd66b76);
+        
+
+        marker_eab27f53ccb14f9e903251bf17db4275.bindPopup(popup_4831c5a203b847a896164e97bc533da4)
+        ;
+
+        
+    
+    
+            var feature_group_9e97c09615604de79b158db3cd879573 = L.featureGroup(
+                {}
+            ).addTo(map_11950ff8273c4bcbaaeb5b7e6163feaa);
+        
+    
+            var marker_cluster_715281a60d6e4da7b25c2e0037ede136 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_9e97c09615604de79b158db3cd879573.addLayer(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var marker_14efc494b39c4c44b21c83a20b194684 = L.marker(
+                [12.9791198, 77.5912997],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_74cd182f875c4d86aa2582a840b7bcd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_14efc494b39c4c44b21c83a20b194684.setIcon(icon_74cd182f875c4d86aa2582a840b7bcd4);
+        
+    
+        var popup_62dd48be1fa947b6a100999cab6bae33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b09c4ccdcda1439ca325c3cd638f0593 = $(`<div id="html_b09c4ccdcda1439ca325c3cd638f0593" style="width: 100.0%; height: 100.0%;"><b>Office:</b> 3M<br><b>Address:</b> Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_62dd48be1fa947b6a100999cab6bae33.setContent(html_b09c4ccdcda1439ca325c3cd638f0593);
+        
+
+        marker_14efc494b39c4c44b21c83a20b194684.bindPopup(popup_62dd48be1fa947b6a100999cab6bae33)
+        ;
+
+        
+    
+    
+            var marker_b250baffcb7b41619eae11c3d778d309 = L.marker(
+                [12.9935653, 77.7054886018742],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_30c251754cac4729b9bf466dce887338 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b250baffcb7b41619eae11c3d778d309.setIcon(icon_30c251754cac4729b9bf466dce887338);
+        
+    
+        var popup_a9ac1aa4dd364837974dc6fa2f3b5eaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e9b1b94e6fa4d3182c6432ccf22127d = $(`<div id="html_2e9b1b94e6fa4d3182c6432ccf22127d" style="width: 100.0%; height: 100.0%;"><b>Office:</b> ABB<br><b>Address:</b> Block-1 (ABB), Bhoruka Drive Way, Hudi, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560048, India</div>`)[0];
+            popup_a9ac1aa4dd364837974dc6fa2f3b5eaa.setContent(html_2e9b1b94e6fa4d3182c6432ccf22127d);
+        
+
+        marker_b250baffcb7b41619eae11c3d778d309.bindPopup(popup_a9ac1aa4dd364837974dc6fa2f3b5eaa)
+        ;
+
+        
+    
+    
+            var marker_32c52bc5f5f34ebb9603fe6d2b4b51c6 = L.marker(
+                [12.98673235, 77.6521944419349],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_d28cfb5031024eb59a6cacd0a273d15f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_32c52bc5f5f34ebb9603fe6d2b4b51c6.setIcon(icon_d28cfb5031024eb59a6cacd0a273d15f);
+        
+    
+        var popup_34c43be7a7074ecfb707d516c2f2fcea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3902a073fbc4fed93d4b7986ef92598 = $(`<div id="html_b3902a073fbc4fed93d4b7986ef92598" style="width: 100.0%; height: 100.0%;"><b>Office:</b> BEML<br><b>Address:</b> BEML, C V Raman Nagar Ward, East Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_34c43be7a7074ecfb707d516c2f2fcea.setContent(html_b3902a073fbc4fed93d4b7986ef92598);
+        
+
+        marker_32c52bc5f5f34ebb9603fe6d2b4b51c6.bindPopup(popup_34c43be7a7074ecfb707d516c2f2fcea)
+        ;
+
+        
+    
+    
+            var marker_c090e018fc9f4fb19786e3354bcf0496 = L.marker(
+                [13.0423809, 77.5599611972451],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_4d24339f5b1646409d9986c4693ff5ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c090e018fc9f4fb19786e3354bcf0496.setIcon(icon_4d24339f5b1646409d9986c4693ff5ae);
+        
+    
+        var popup_48c115c842794a4e8f03757137d5b1f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1807ed8703354a82b2b20c069cdbdd52 = $(`<div id="html_1807ed8703354a82b2b20c069cdbdd52" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Bharat Electronics<br><b>Address:</b> Bharat Electronics Limited, Dodda Bommasandra, Yelahanka Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_48c115c842794a4e8f03757137d5b1f2.setContent(html_1807ed8703354a82b2b20c069cdbdd52);
+        
+
+        marker_c090e018fc9f4fb19786e3354bcf0496.bindPopup(popup_48c115c842794a4e8f03757137d5b1f2)
+        ;
+
+        
+    
+    
+            var marker_d07c938eb21743b3bda8f901e33aeb04 = L.marker(
+                [12.8340026, 77.6795106],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_d4da9ba090da4c55a32cf212f3409f85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d07c938eb21743b3bda8f901e33aeb04.setIcon(icon_d4da9ba090da4c55a32cf212f3409f85);
+        
+    
+        var popup_94327f0bf1a94dbab21685425adf6a78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58b99e23e6d24c969a9a61dba61cd6f8 = $(`<div id="html_58b99e23e6d24c969a9a61dba61cd6f8" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Biocon <br><b>Address:</b> SkyPro Tecknologies, H, Hosur Road, Hebbagodi, Electronics City Phase 2 (West), Kittaganahalli, Bangalore Urban, Karnataka, 560100, India</div>`)[0];
+            popup_94327f0bf1a94dbab21685425adf6a78.setContent(html_58b99e23e6d24c969a9a61dba61cd6f8);
+        
+
+        marker_d07c938eb21743b3bda8f901e33aeb04.bindPopup(popup_94327f0bf1a94dbab21685425adf6a78)
+        ;
+
+        
+    
+    
+            var marker_0370b9376e6e4f9781d7500dac363abd = L.marker(
+                [12.9881185, 77.710421],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_4a15f5df30c2443a9b3efa7de0993f2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0370b9376e6e4f9781d7500dac363abd.setIcon(icon_4a15f5df30c2443a9b3efa7de0993f2a);
+        
+    
+        var popup_de4f8537ba10492b81f817f0c9432813 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c96b888b1d0443089c4a2a3b380fb928 = $(`<div id="html_c96b888b1d0443089c4a2a3b380fb928" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Bosch<br><b>Address:</b> Bosch Car Service Center, Hoodi Main Road, Garudachara Palya, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560067, India</div>`)[0];
+            popup_de4f8537ba10492b81f817f0c9432813.setContent(html_c96b888b1d0443089c4a2a3b380fb928);
+        
+
+        marker_0370b9376e6e4f9781d7500dac363abd.bindPopup(popup_de4f8537ba10492b81f817f0c9432813)
+        ;
+
+        
+    
+    
+            var marker_998582bbcdd840a8b44853563b31244a = L.marker(
+                [12.95882735, 77.6508697301364],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_1e1e3a446c924923b7751f6ba2149ce6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_998582bbcdd840a8b44853563b31244a.setIcon(icon_1e1e3a446c924923b7751f6ba2149ce6);
+        
+    
+        var popup_e543a965ceca45d1bab0c59b34e79ecc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab3ba5e3abed45cc83ec747a65e877b1 = $(`<div id="html_ab3ba5e3abed45cc83ec747a65e877b1" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Britannia<br><b>Address:</b> Old Britannia Headquarters, Konena Agrahara Ward, East Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_e543a965ceca45d1bab0c59b34e79ecc.setContent(html_ab3ba5e3abed45cc83ec747a65e877b1);
+        
+
+        marker_998582bbcdd840a8b44853563b31244a.bindPopup(popup_e543a965ceca45d1bab0c59b34e79ecc)
+        ;
+
+        
+    
+    
+            var marker_3ca7109fceb44f8bb32fb28c52b1d7e9 = L.marker(
+                [13.0281717, 77.5353211],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_0514ba5df4604b93a8536ca957967c6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3ca7109fceb44f8bb32fb28c52b1d7e9.setIcon(icon_0514ba5df4604b93a8536ca957967c6a);
+        
+    
+        var popup_fc15d82cf8d7439192e22563dff9234e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f079f74d132349e3a0218c6303fe8f9a = $(`<div id="html_f079f74d132349e3a0218c6303fe8f9a" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Gokaldas<br><b>Address:</b> Gokaldas, Outer Ring Road, Peenya Industrial Area, Lakshmi Devi Nagar, Rajarajeshwari Nagar Zone, Bengaluru, Bangalore Urban, Karnataka, 560022, India</div>`)[0];
+            popup_fc15d82cf8d7439192e22563dff9234e.setContent(html_f079f74d132349e3a0218c6303fe8f9a);
+        
+
+        marker_3ca7109fceb44f8bb32fb28c52b1d7e9.bindPopup(popup_fc15d82cf8d7439192e22563dff9234e)
+        ;
+
+        
+    
+    
+            var marker_4a180ef41528482fbe4093998c2ea259 = L.marker(
+                [12.9210658, 77.6807407],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_9eb277b78fb74bad9fb3df3e0e0a88fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a180ef41528482fbe4093998c2ea259.setIcon(icon_9eb277b78fb74bad9fb3df3e0e0a88fe);
+        
+    
+        var popup_a5254e96b9ac45a692787cea981a5241 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_384684f7fa4e40c4b00b8b3b2e8b905c = $(`<div id="html_384684f7fa4e40c4b00b8b3b2e8b905c" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Hinduja Global Solutions<br><b>Address:</b> Hinduja Global Solutions, (HGS), Building 14, Pritech Park, Outer Ring Road, Green Glen Layout, Bellanduru, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560103, India</div>`)[0];
+            popup_a5254e96b9ac45a692787cea981a5241.setContent(html_384684f7fa4e40c4b00b8b3b2e8b905c);
+        
+
+        marker_4a180ef41528482fbe4093998c2ea259.bindPopup(popup_a5254e96b9ac45a692787cea981a5241)
+        ;
+
+        
+    
+    
+            var marker_7621fb6897d0467f8f332610805cc4a1 = L.marker(
+                [12.84508845, 77.6649530443891],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_f53fa5aa4620420eaf938bf532149c7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7621fb6897d0467f8f332610805cc4a1.setIcon(icon_f53fa5aa4620420eaf938bf532149c7e);
+        
+    
+        var popup_7919b03fbb514e9d991c37cb6fee4de1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b76b3689f3834a6dbcc9ba3538f2bfe4 = $(`<div id="html_b76b3689f3834a6dbcc9ba3538f2bfe4" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Infosys<br><b>Address:</b> Infosys, Electronics City Phase 1, Vittasandra, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_7919b03fbb514e9d991c37cb6fee4de1.setContent(html_b76b3689f3834a6dbcc9ba3538f2bfe4);
+        
+
+        marker_7621fb6897d0467f8f332610805cc4a1.bindPopup(popup_7919b03fbb514e9d991c37cb6fee4de1)
+        ;
+
+        
+    
+    
+            var marker_940e9691656048daac4c8ec4d52370d5 = L.marker(
+                [12.91834955, 77.5020134870256],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_88f0ca1248dc4e6c8f83f454513ee916 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_940e9691656048daac4c8ec4d52370d5.setIcon(icon_88f0ca1248dc4e6c8f83f454513ee916);
+        
+    
+        var popup_f6c5540445424ecba7e27e78e13ce19e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e661471aa30340e0b869f4ca2f44d8a2 = $(`<div id="html_e661471aa30340e0b869f4ca2f44d8a2" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Mindtree<br><b>Address:</b> Mindtree Phase 1, Rangaswamy Road, Concept City, Hemmigepura, Rajarajeshwari Nagar Zone, Bengaluru, Bangalore Urban, Karnataka, 560059, India</div>`)[0];
+            popup_f6c5540445424ecba7e27e78e13ce19e.setContent(html_e661471aa30340e0b869f4ca2f44d8a2);
+        
+
+        marker_940e9691656048daac4c8ec4d52370d5.bindPopup(popup_f6c5540445424ecba7e27e78e13ce19e)
+        ;
+
+        
+    
+    
+            var marker_e7fa68f6bd974ec3af37e8e814782a3f = L.marker(
+                [12.98982905, 77.7270802878031],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_0f259dd9c8944b3f8682244c41f4c286 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e7fa68f6bd974ec3af37e8e814782a3f.setIcon(icon_0f259dd9c8944b3f8682244c41f4c286);
+        
+    
+        var popup_58a5714cc7974d45ba5e92b026385ac7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc11543ba44e4a90b9b2ed94df74cd93 = $(`<div id="html_dc11543ba44e4a90b9b2ed94df74cd93" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Prestige Estate<br><b>Address:</b> Prestige Shantiniketan Temple, Whitefield Road, Ayyappanagara, Hudi, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560067, India</div>`)[0];
+            popup_58a5714cc7974d45ba5e92b026385ac7.setContent(html_dc11543ba44e4a90b9b2ed94df74cd93);
+        
+
+        marker_e7fa68f6bd974ec3af37e8e814782a3f.bindPopup(popup_58a5714cc7974d45ba5e92b026385ac7)
+        ;
+
+        
+    
+    
+            var marker_65aedc905dbd45458a66f96516ad7486 = L.marker(
+                [12.9282145, 77.6697843640104],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_6be3764251df4d338bdeb10b42c35788 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65aedc905dbd45458a66f96516ad7486.setIcon(icon_6be3764251df4d338bdeb10b42c35788);
+        
+    
+        var popup_5696f5b42aca4bd78e07b890f41aabab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d066e97037704461a1d6d386586d1e7c = $(`<div id="html_d066e97037704461a1d6d386586d1e7c" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Sobha<br><b>Address:</b> Sobha Mayflower, Bellanduru, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_5696f5b42aca4bd78e07b890f41aabab.setContent(html_d066e97037704461a1d6d386586d1e7c);
+        
+
+        marker_65aedc905dbd45458a66f96516ad7486.bindPopup(popup_5696f5b42aca4bd78e07b890f41aabab)
+        ;
+
+        
+    
+    
+            var marker_906b0a20ca85472897f7f85fd1b8fefa = L.marker(
+                [13.0240502, 77.6373045],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_74a02045ba534bcd8adf65f18aa853f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_906b0a20ca85472897f7f85fd1b8fefa.setIcon(icon_74a02045ba534bcd8adf65f18aa853f2);
+        
+    
+        var popup_f340b677100b4af38a702e1413374638 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_467f9641c7474466b45546819344dcbd = $(`<div id="html_467f9641c7474466b45546819344dcbd" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Titan<br><b>Address:</b> Titan, Kammanahalli Main Road, Kammanahalli, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560033, India</div>`)[0];
+            popup_f340b677100b4af38a702e1413374638.setContent(html_467f9641c7474466b45546819344dcbd);
+        
+
+        marker_906b0a20ca85472897f7f85fd1b8fefa.bindPopup(popup_f340b677100b4af38a702e1413374638)
+        ;
+
+        
+    
+    
+            var marker_b28946e3c06a432fac6928b6c85105a1 = L.marker(
+                [13.1183301, 77.373455346975],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_e17d9eac6a284924b1257e06a14bba7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b28946e3c06a432fac6928b6c85105a1.setIcon(icon_e17d9eac6a284924b1257e06a14bba7a);
+        
+    
+        var popup_5f660493d5114f88aec8cdb88e2abe6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0b22d02abd34c07ae9fc163b34bbfbe = $(`<div id="html_f0b22d02abd34c07ae9fc163b34bbfbe" style="width: 100.0%; height: 100.0%;"><b>Office:</b> United Breweries<br><b>Address:</b> United Breweries, Vajarahalli, Nelamangala, Nelamangala taluk, Bangalore Rural, Karnataka, India</div>`)[0];
+            popup_5f660493d5114f88aec8cdb88e2abe6f.setContent(html_f0b22d02abd34c07ae9fc163b34bbfbe);
+        
+
+        marker_b28946e3c06a432fac6928b6c85105a1.bindPopup(popup_5f660493d5114f88aec8cdb88e2abe6f)
+        ;
+
+        
+    
+    
+            var marker_81b94eb3206c44a5b48c9ef8ef87c942 = L.marker(
+                [12.9135669, 77.6856346215575],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_31b00fc2711c413eaf128e5a5f8fded9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_81b94eb3206c44a5b48c9ef8ef87c942.setIcon(icon_31b00fc2711c413eaf128e5a5f8fded9);
+        
+    
+        var popup_cfed1beb983f4c88b67e18a5c799ffd1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48e193d01f0242efb45067a2c003b901 = $(`<div id="html_48e193d01f0242efb45067a2c003b901" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Wipro<br><b>Address:</b> Wipro Corporate Office, Bellanduru, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_cfed1beb983f4c88b67e18a5c799ffd1.setContent(html_48e193d01f0242efb45067a2c003b901);
+        
+
+        marker_81b94eb3206c44a5b48c9ef8ef87c942.bindPopup(popup_cfed1beb983f4c88b67e18a5c799ffd1)
+        ;
+
+        
+    
+    
+            var marker_cecca09ea5df45aa8fe97a684efd4f59 = L.marker(
+                [12.9781816, 77.6426659],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_f016e63000844c299a00484729583ad7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cecca09ea5df45aa8fe97a684efd4f59.setIcon(icon_f016e63000844c299a00484729583ad7);
+        
+    
+        var popup_8259f70d6eb24e87a37bcf16d2a9cb0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_308161ee163f4697984571d2c3a3b9e6 = $(`<div id="html_308161ee163f4697984571d2c3a3b9e6" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Himalaya<br><b>Address:</b> Himalaya, Chinmaya Mission Hospital Road, Old Binnamangala, Hoysala Nagara, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560038, India</div>`)[0];
+            popup_8259f70d6eb24e87a37bcf16d2a9cb0b.setContent(html_308161ee163f4697984571d2c3a3b9e6);
+        
+
+        marker_cecca09ea5df45aa8fe97a684efd4f59.bindPopup(popup_8259f70d6eb24e87a37bcf16d2a9cb0b)
+        ;
+
+        
+    
+    
+            var marker_40cf043dc3704332b955f66d67e3468c = L.marker(
+                [12.9812491, 77.5975758031958],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_d9842d0f6db4400d9704dcee7c025008 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_40cf043dc3704332b955f66d67e3468c.setIcon(icon_d9842d0f6db4400d9704dcee7c025008);
+        
+    
+        var popup_0ed46b029d7e436bb762371e9c6775cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25017a17a4824f12915a6d6675fd100f = $(`<div id="html_25017a17a4824f12915a6d6675fd100f" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Hindustan Aeronautics<br><b>Address:</b> Hindustan Aeronautics Limited, Sampangiram Nagar Ward, East Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_0ed46b029d7e436bb762371e9c6775cb.setContent(html_25017a17a4824f12915a6d6675fd100f);
+        
+
+        marker_40cf043dc3704332b955f66d67e3468c.bindPopup(popup_0ed46b029d7e436bb762371e9c6775cb)
+        ;
+
+        
+    
+    
+            var marker_78aa3af85d604c2389173dd2efebed4a = L.marker(
+                [12.8621083, 77.6601795],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_2434a6673289402d9a52f0a7b79565fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_78aa3af85d604c2389173dd2efebed4a.setIcon(icon_2434a6673289402d9a52f0a7b79565fd);
+        
+    
+        var popup_66158dbc665f47c7a0ee62ba7e4e88fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfaf69a589bc4d1f864dcd9f2933be39 = $(`<div id="html_cfaf69a589bc4d1f864dcd9f2933be39" style="width: 100.0%; height: 100.0%;"><b>Office:</b> BMW<br><b>Address:</b> Navneeth Motors BMW Showroom, Service Road, Begur, Bommanahalli Zone, Bengaluru, Bangalore Urban, Karnataka, 560 100, India</div>`)[0];
+            popup_66158dbc665f47c7a0ee62ba7e4e88fa.setContent(html_cfaf69a589bc4d1f864dcd9f2933be39);
+        
+
+        marker_78aa3af85d604c2389173dd2efebed4a.bindPopup(popup_66158dbc665f47c7a0ee62ba7e4e88fa)
+        ;
+
+        
+    
+    
+            var marker_20c574b123444288933457cd6c29707f = L.marker(
+                [12.9246327, 77.6704512],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_3004bed9a9af400bac7414c9b0476d98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20c574b123444288933457cd6c29707f.setIcon(icon_3004bed9a9af400bac7414c9b0476d98);
+        
+    
+        var popup_8bee8d22e9bc4d089fe55fed9294f796 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5d99af55ae745fba6e947f2c2bb0306 = $(`<div id="html_f5d99af55ae745fba6e947f2c2bb0306" style="width: 100.0%; height: 100.0%;"><b>Office:</b> DELL<br><b>Address:</b> DELL, Palm Avenue, Green Glen Layout, Bellanduru, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 530103, India</div>`)[0];
+            popup_8bee8d22e9bc4d089fe55fed9294f796.setContent(html_f5d99af55ae745fba6e947f2c2bb0306);
+        
+
+        marker_20c574b123444288933457cd6c29707f.bindPopup(popup_8bee8d22e9bc4d089fe55fed9294f796)
+        ;
+
+        
+    
+    
+            var marker_47e30527f9a0408c9ef1e6fd837b3072 = L.marker(
+                [12.9783111, 77.6332253529774],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_ecb56b26d07f4356a18658041316677b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_47e30527f9a0408c9ef1e6fd837b3072.setIcon(icon_ecb56b26d07f4356a18658041316677b);
+        
+    
+        var popup_dfe2109f52c64ef3a1de02ac6ef0d67c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_145a289fd7e84c72abe00ba379d98eef = $(`<div id="html_145a289fd7e84c72abe00ba379d98eef" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Sleepwell<br><b>Address:</b> Sleepwell, 39, Chinmaya Mission Hospital Road, Lakshmipuram, Hoysala Nagara, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560038, India</div>`)[0];
+            popup_dfe2109f52c64ef3a1de02ac6ef0d67c.setContent(html_145a289fd7e84c72abe00ba379d98eef);
+        
+
+        marker_47e30527f9a0408c9ef1e6fd837b3072.bindPopup(popup_dfe2109f52c64ef3a1de02ac6ef0d67c)
+        ;
+
+        
+    
+    
+            var marker_e005885061f1446e996833dab8d9c2b8 = L.marker(
+                [12.9382437, 77.5785496],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_436fa26a89f34d3e981a184b991e7c41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e005885061f1446e996833dab8d9c2b8.setIcon(icon_436fa26a89f34d3e981a184b991e7c41);
+        
+    
+        var popup_63cb7807144e45358448f0cbb87b9273 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20464646cb3a4c57ac96f13648468283 = $(`<div id="html_20464646cb3a4c57ac96f13648468283" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Kurlon<br><b>Address:</b> Mattress Firm, Model House Street, Basavanagudi Ward, South Zone, Bengaluru, Bangalore Urban, Karnataka, 560004, India</div>`)[0];
+            popup_63cb7807144e45358448f0cbb87b9273.setContent(html_20464646cb3a4c57ac96f13648468283);
+        
+
+        marker_e005885061f1446e996833dab8d9c2b8.bindPopup(popup_63cb7807144e45358448f0cbb87b9273)
+        ;
+
+        
+    
+    
+            var marker_6c11e5a68f7943ad8f56a7b4e8dd251a = L.marker(
+                [12.9749455, 77.6197537],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_d3a620d5a664401597d6dc953fbbfc4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6c11e5a68f7943ad8f56a7b4e8dd251a.setIcon(icon_d3a620d5a664401597d6dc953fbbfc4e);
+        
+    
+        var popup_d6ae00b2aa5247e4a052e580426bcd39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b48a0c714d674fd98643a4693fb8f904 = $(`<div id="html_b48a0c714d674fd98643a4693fb8f904" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Purvankara<br><b>Address:</b> Purvankara academy of excellence, Halasuru Road, Hanumanthappa Layout, Halasooru, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560042, India</div>`)[0];
+            popup_d6ae00b2aa5247e4a052e580426bcd39.setContent(html_b48a0c714d674fd98643a4693fb8f904);
+        
+
+        marker_6c11e5a68f7943ad8f56a7b4e8dd251a.bindPopup(popup_d6ae00b2aa5247e4a052e580426bcd39)
+        ;
+
+        
+    
+    
+            var marker_b620b275c953492c8fb12a1c9d3003c7 = L.marker(
+                [12.93967925, 77.5803839460445],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_b13bfa1b5ad1492eb0183434e7329851 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b620b275c953492c8fb12a1c9d3003c7.setIcon(icon_b13bfa1b5ad1492eb0183434e7329851);
+        
+    
+        var popup_3cd174382ff14155b20353116bd7033e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b04f1afeac4b4d9d9031a39ef33b9ba0 = $(`<div id="html_b04f1afeac4b4d9d9031a39ef33b9ba0" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Sonata Software<br><b>Address:</b> Sonata Software, Rashtriya Vidyalaya Road, Mavalli, Vishveshwara Puram, South Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_3cd174382ff14155b20353116bd7033e.setContent(html_b04f1afeac4b4d9d9031a39ef33b9ba0);
+        
+
+        marker_b620b275c953492c8fb12a1c9d3003c7.bindPopup(popup_3cd174382ff14155b20353116bd7033e)
+        ;
+
+        
+    
+    
+            var marker_aa21065e6160409da20d63ca02d75951 = L.marker(
+                [13.0497646, 77.5620110581248],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_4390ee749fa14ade8a5736952d8d4c3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa21065e6160409da20d63ca02d75951.setIcon(icon_4390ee749fa14ade8a5736952d8d4c3d);
+        
+    
+        var popup_515866b6ab4847d5a6558a99d6ae0efd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a7ff2c186304940a040f33bcab4896b = $(`<div id="html_0a7ff2c186304940a040f33bcab4896b" style="width: 100.0%; height: 100.0%;"><b>Office:</b> BEL<br><b>Address:</b> Bharath Electronics Limited (BEL), Dodda Bommasandra, Yelahanka Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_515866b6ab4847d5a6558a99d6ae0efd.setContent(html_0a7ff2c186304940a040f33bcab4896b);
+        
+
+        marker_aa21065e6160409da20d63ca02d75951.bindPopup(popup_515866b6ab4847d5a6558a99d6ae0efd)
+        ;
+
+        
+    
+    
+            var marker_0492abb8b0ba452799bfb0c4be3de811 = L.marker(
+                [12.9795028, 77.6959454],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_c9cd9c7dd4ea48d58d0e86820cd3b9b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0492abb8b0ba452799bfb0c4be3de811.setIcon(icon_c9cd9c7dd4ea48d58d0e86820cd3b9b6);
+        
+    
+        var popup_303ee838b81f4c7d99d3eb3fd5fdc82a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93cc78ef415b464ca268d9c3ae695dd1 = $(`<div id="html_93cc78ef415b464ca268d9c3ae695dd1" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Amazon<br><b>Address:</b> Amazon, Doddanekkundi Main Road, Kundalahalli Colony, Dodda Nekkundi, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560 048, India</div>`)[0];
+            popup_303ee838b81f4c7d99d3eb3fd5fdc82a.setContent(html_93cc78ef415b464ca268d9c3ae695dd1);
+        
+
+        marker_0492abb8b0ba452799bfb0c4be3de811.bindPopup(popup_303ee838b81f4c7d99d3eb3fd5fdc82a)
+        ;
+
+        
+    
+    
+            var marker_a41838d23117477498a07abdc3087741 = L.marker(
+                [12.9216898, 77.6687936],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_2c9b23e642ab4a6b9ce75f45e3d91a32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a41838d23117477498a07abdc3087741.setIcon(icon_2c9b23e642ab4a6b9ce75f45e3d91a32);
+        
+    
+        var popup_67f9b9901ee74da7a1766528c8fed0dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d34c68a15e348e7891f1d3b116ef99b = $(`<div id="html_9d34c68a15e348e7891f1d3b116ef99b" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Microsoft<br><b>Address:</b> Microsoft, Outer Ring Road, Green Glen Layout, Bellanduru, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 530103, India</div>`)[0];
+            popup_67f9b9901ee74da7a1766528c8fed0dc.setContent(html_9d34c68a15e348e7891f1d3b116ef99b);
+        
+
+        marker_a41838d23117477498a07abdc3087741.bindPopup(popup_67f9b9901ee74da7a1766528c8fed0dc)
+        ;
+
+        
+    
+    
+            var marker_3c96870a68704e6e897b2dcaf8cef2f6 = L.marker(
+                [12.9936274, 77.6604655],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_4278e3b0695946738734a867623a7425 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c96870a68704e6e897b2dcaf8cef2f6.setIcon(icon_4278e3b0695946738734a867623a7425);
+        
+    
+        var popup_3463b5e81bba41dab5ac0cc80917a49e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fba72bb58a2b484790c6ad425d1b84cd = $(`<div id="html_fba72bb58a2b484790c6ad425d1b84cd" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Google<br><b>Address:</b> Google, Swamy Vivekananda Road (Old Madras Road), A Narayanapura, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560016, India</div>`)[0];
+            popup_3463b5e81bba41dab5ac0cc80917a49e.setContent(html_fba72bb58a2b484790c6ad425d1b84cd);
+        
+
+        marker_3c96870a68704e6e897b2dcaf8cef2f6.bindPopup(popup_3463b5e81bba41dab5ac0cc80917a49e)
+        ;
+
+        
+    
+    
+            var marker_fa2e6f4c780b46dfa649032a6ebdc8cf = L.marker(
+                [12.99646925, 77.6888267135983],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_f138a4dc0dc0404fab3c8566f0a1a23a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fa2e6f4c780b46dfa649032a6ebdc8cf.setIcon(icon_f138a4dc0dc0404fab3c8566f0a1a23a);
+        
+    
+        var popup_ca6457d1468a444792c5aeb59abab5da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9874730e63fd46bfb4ffd5758e821921 = $(`<div id="html_9874730e63fd46bfb4ffd5758e821921" style="width: 100.0%; height: 100.0%;"><b>Office:</b> HP<br><b>Address:</b> Hewlett Packard Enterprise, Devasandra, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_ca6457d1468a444792c5aeb59abab5da.setContent(html_9874730e63fd46bfb4ffd5758e821921);
+        
+
+        marker_fa2e6f4c780b46dfa649032a6ebdc8cf.bindPopup(popup_ca6457d1468a444792c5aeb59abab5da)
+        ;
+
+        
+    
+    
+            var marker_1074812ed7714727a1850b9c54190ef9 = L.marker(
+                [13.0556573, 77.7459797772657],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_e3df93851e714c78aa1af476563bbcc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1074812ed7714727a1850b9c54190ef9.setIcon(icon_e3df93851e714c78aa1af476563bbcc7);
+        
+    
+        var popup_57d00894f32441a49b758ff9e92d0546 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be219cf307b942dca414abf136e4166e = $(`<div id="html_be219cf307b942dca414abf136e4166e" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Siemens<br><b>Address:</b> Siemens, Chimasandra, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_57d00894f32441a49b758ff9e92d0546.setContent(html_be219cf307b942dca414abf136e4166e);
+        
+
+        marker_1074812ed7714727a1850b9c54190ef9.bindPopup(popup_57d00894f32441a49b758ff9e92d0546)
+        ;
+
+        
+    
+    
+            var marker_7d72ba09f62847a4ad2ecb95cfdc4a74 = L.marker(
+                [13.0348877, 77.5889021],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_e638d2a4936744a4b2fee1a33fc39d62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7d72ba09f62847a4ad2ecb95cfdc4a74.setIcon(icon_e638d2a4936744a4b2fee1a33fc39d62);
+        
+    
+        var popup_1e052a1cabea4a4a819b18edfdf9899c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e31a474a20fb4bd6b83c5afd249c04f6 = $(`<div id="html_e31a474a20fb4bd6b83c5afd249c04f6" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Toyota<br><b>Address:</b> Toyota, Bellary Road, Ganga Nagar Ward, East Zone, Bengaluru, Bangalore Urban, Karnataka, 560024, India</div>`)[0];
+            popup_1e052a1cabea4a4a819b18edfdf9899c.setContent(html_e31a474a20fb4bd6b83c5afd249c04f6);
+        
+
+        marker_7d72ba09f62847a4ad2ecb95cfdc4a74.bindPopup(popup_1e052a1cabea4a4a819b18edfdf9899c)
+        ;
+
+        
+    
+    
+            var marker_d20ed120a16b4be489c94869652ef425 = L.marker(
+                [12.84830835, 77.6789892079896],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_82f02fed505d4b8a9233ad78f76944da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d20ed120a16b4be489c94869652ef425.setIcon(icon_82f02fed505d4b8a9233ad78f76944da);
+        
+    
+        var popup_fcc7d3839d3e410ca020e9fa3f038c06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6971ac0c31c240f6b97ac300e30591c2 = $(`<div id="html_6971ac0c31c240f6b97ac300e30591c2" style="width: 100.0%; height: 100.0%;"><b>Office:</b> TCS<br><b>Address:</b> TCS Think Campus, Electronics City Phase 2 (East), Singena Agrahara, Bangalore Urban, Karnataka, India</div>`)[0];
+            popup_fcc7d3839d3e410ca020e9fa3f038c06.setContent(html_6971ac0c31c240f6b97ac300e30591c2);
+        
+
+        marker_d20ed120a16b4be489c94869652ef425.bindPopup(popup_fcc7d3839d3e410ca020e9fa3f038c06)
+        ;
+
+        
+    
+    
+            var marker_5cf31c61a1774f40a247f2318efab9c0 = L.marker(
+                [12.9304166, 77.6925649],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_72baeed41f5f44a4bf238f63c6485799 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5cf31c61a1774f40a247f2318efab9c0.setIcon(icon_72baeed41f5f44a4bf238f63c6485799);
+        
+    
+        var popup_315b2761b88d40649452d2ca077e926b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72c3b9cef862489bbae3c47b7747d4d5 = $(`<div id="html_72c3b9cef862489bbae3c47b7747d4d5" style="width: 100.0%; height: 100.0%;"><b>Office:</b> EXL<br><b>Address:</b> EXL Service, Embassy TechVillage Road, Embassy TechVillage, Bellanduru, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560103, India</div>`)[0];
+            popup_315b2761b88d40649452d2ca077e926b.setContent(html_72c3b9cef862489bbae3c47b7747d4d5);
+        
+
+        marker_5cf31c61a1774f40a247f2318efab9c0.bindPopup(popup_315b2761b88d40649452d2ca077e926b)
+        ;
+
+        
+    
+    
+            var marker_8c993ab3166c4f3c96d6b8f93d81195c = L.marker(
+                [12.85094555, 77.6778630567074],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_53814c1979ed49d1a2e77d242b0e9809 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c993ab3166c4f3c96d6b8f93d81195c.setIcon(icon_53814c1979ed49d1a2e77d242b0e9809);
+        
+    
+        var popup_0c31f3c4fefc4b66bd2a00cb2e0c64de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfb5f1bddd484200a2a0669058073b46 = $(`<div id="html_dfb5f1bddd484200a2a0669058073b46" style="width: 100.0%; height: 100.0%;"><b>Office:</b> Tech Mahindra<br><b>Address:</b> Tech Mahindra, Electronics City Phase 2 (East), Bangalore Urban, Karnataka, 560001, India</div>`)[0];
+            popup_0c31f3c4fefc4b66bd2a00cb2e0c64de.setContent(html_dfb5f1bddd484200a2a0669058073b46);
+        
+
+        marker_8c993ab3166c4f3c96d6b8f93d81195c.bindPopup(popup_0c31f3c4fefc4b66bd2a00cb2e0c64de)
+        ;
+
+        
+    
+    
+            var marker_9020c92d75984607a15409b6ff4f3ffa = L.marker(
+                [12.9259371, 77.6867619],
+                {}
+            ).addTo(marker_cluster_715281a60d6e4da7b25c2e0037ede136);
+        
+    
+            var icon_9a7ed4020f3e464eb18b2c8a0b05c6a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9020c92d75984607a15409b6ff4f3ffa.setIcon(icon_9a7ed4020f3e464eb18b2c8a0b05c6a6);
+        
+    
+        var popup_5a86a4574613412584588b6706529b26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72d274de04cf4c79a5341b4137b3b2c0 = $(`<div id="html_72d274de04cf4c79a5341b4137b3b2c0" style="width: 100.0%; height: 100.0%;"><b>Office:</b> KPMG<br><b>Address:</b> KPMG, C 1, RMZ Eco World Rd, RMZ Eco World, Bellanduru, Mahadevapura Zone, Bengaluru, Bangalore Urban, Karnataka, 560103, India</div>`)[0];
+            popup_5a86a4574613412584588b6706529b26.setContent(html_72d274de04cf4c79a5341b4137b3b2c0);
+        
+
+        marker_9020c92d75984607a15409b6ff4f3ffa.bindPopup(popup_5a86a4574613412584588b6706529b26)
+        ;
+
+        
+    
+    
+            var layer_control_e9c6fc3bcd1c48b3ac71736c919dad8d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c038463149b5481fbbb7422935ae2000,
+                },
+                overlays :  {
+                    "malls" : feature_group_173f6502c4f94bbeae2ed5ce66559857,
+                    "restraunts" : feature_group_0bdbe09c2f9c4863a617bb346ce80b55,
+                    "offices" : feature_group_9e97c09615604de79b158db3cd879573,
+                },
+            };
+            L.control.layers(
+                layer_control_e9c6fc3bcd1c48b3ac71736c919dad8d.base_layers,
+                layer_control_e9c6fc3bcd1c48b3ac71736c919dad8d.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_11950ff8273c4bcbaaeb5b7e6163feaa);
+        
+</script>
